@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static  %}
 <html lang="en">
 
 <head>
@@ -7,12 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Album example · Bootstrap</title>
+    <title>Home · Guka</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-
 
 
     <style>
@@ -34,7 +34,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Guka Nozadze</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Guka Nozadze</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,13 +42,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Twitter</a>
+                        <a class="nav-link" href="https://twitter.com/guka_nozadze">Twitter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resume</a>
+                        <a class="nav-link" href="{% static 'Geo_CV.pdf' %}">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -64,6 +64,7 @@
                 <p>
                     <a href="mailto:gukanozadze@gmail.com" class="btn btn-primary my-2">Email me</a>
                 </p>
+                <img src="{% static 'profile.png'%}">
             </div>
         </section>
         
