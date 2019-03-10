@@ -50,10 +50,10 @@
                             <a class="nav-link" href="{% static 'Geo_CV.pdf' %}">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
+                            <!--<a class="nav-link" href="{% url 'allblogs' %}">Blog</a>-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="localhost:8000/admin">ADmin</a>
+                            <a class="nav-link" href="admin/">ADmin</a>
                         </li>
                     </ul>
                 </div>
@@ -63,9 +63,17 @@
 
     <main role="main">
 
+        <section class="jumbotron text-center">
+            <div class="container">
+                <p class="lead">Hey, my name is Guka Nozadze. This is My Website</p>
+                <p>
+                    <a href="mailto:gukanozadze@gmail.com" class="btn btn-primary my-2">Email me</a>
+                </p>
+                <img class='img-fluid' src="{% static 'profile.png'%}">
+            </div>
+        </section>
         
-        
-        <div class="album py-5 bg-light">
+        <div class="album py-5 bg-light" id="charts">
             <div class="container">
                 <div id="chart" style="width:600px; height:400px;"></div>
 
@@ -100,7 +108,7 @@
                         <div class="card mb-4 pb-4 shadow-sm">
                             <div class="container">
                                 {% load crispy_forms_tags %}
-                                <form method="POST">
+                                <form method="POST" action="#charts">
                                     {% csrf_token %}
                                     
                                     {{ form|crispy }}

@@ -4,6 +4,7 @@ var myChart = echarts.init(document.getElementById('chart'));
 
 
 var data = genData(50);
+
 option = {
     title : {
         text: 'CryptoCurrency',
@@ -41,6 +42,8 @@ option = {
         }
     ]
 };
+
+
 
 function genData(count) {
     
@@ -89,5 +92,12 @@ function genData(count) {
 }
 
 
+
+
+
 // use configuration item and data specified to show chart
 myChart.setOption(option);
+setInterval(function() {
+    console.log("Working")
+ }, 3000);
+// use configuration item and data specified to show chart
