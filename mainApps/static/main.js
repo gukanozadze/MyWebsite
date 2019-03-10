@@ -100,4 +100,4 @@ myChart.setOption(option);
 setInterval(function() {
     console.log("Working")
  }, 3000);
-// use configuration item and data specified to show chart
+// use configuration itemf and data specified to show chart
