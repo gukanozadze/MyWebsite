@@ -2,7 +2,6 @@
 var myChart = echarts.init(document.getElementById('chart'));
 
 
-
 var data = genData(50);
 
 option = {
@@ -19,7 +18,7 @@ option = {
         type: 'scroll',
         orient: 'vertical',
         right: 10,
-        top: 20,
+        top: 100,
         bottom: 20,
         data: data.legendData,
 
@@ -97,7 +96,9 @@ function genData(count) {
 
 // use configuration item and data specified to show chart
 myChart.setOption(option);
-setInterval(function() {
-    console.log("Working")
- }, 3000);
+$(window).on('resize', function(){
+    if(myChart != null && myChart != undefined){
+        myChart.resize();
+    }
+});
 // use configuration itemf and data specified to show chart
