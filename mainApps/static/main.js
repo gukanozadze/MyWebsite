@@ -5,10 +5,12 @@ var myChart = echarts.init(document.getElementById('chart'));
 var data = genData(50);
 
 option = {
+   
     title : {
         text: 'CryptoCurrency',
         subtext: 'Values',
-        x:'center'
+        x:'center',
+        show: false
     },
     tooltip : {
         trigger: 'item',
@@ -17,19 +19,19 @@ option = {
     legend: {
         type: 'scroll',
         orient: 'vertical',
-        right: 10,
-        top: 100,
-        bottom: 20,
+        right: 0,
         data: data.legendData,
-
-        selected: data.selected
+        selected: data.selected,
+        textStyle: {
+            fontSize: 15
+        }
     },
     series : [
         {
             name: 'Currency',
             type: 'pie',
-            radius : '55%',
-            center: ['40%', '50%'],
+            selectedMode: true,
+            radius : '80%',
             data: data.seriesData,
             itemStyle: {
                 emphasis: {
@@ -37,7 +39,7 @@ option = {
                     shadowOffsetX: 0,
                     shadowColor: 'rgba(0, 0, 0, 0.5)'
                 }
-            }
+            },
         }
     ]
 };
@@ -52,7 +54,7 @@ function genData(count) {
     var legendData = [];
     var seriesData = [];
     var selected = {};
-
+    console.log(chartData)
     // My Edit
     for(let chart of chartData){
         nameList.push(chart.labelName)

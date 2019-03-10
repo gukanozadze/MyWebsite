@@ -1,7 +1,11 @@
 <!doctype html>
 {% load static %}
 <html lang="en">
-
+<style>
+body{
+    width: 100%
+}
+</style>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -75,7 +79,8 @@
         
         <div class="album py-5 bg-light" id="charts">
             <div class="container">
-                <div id="chart" style="width: 500px; min-height:400px;"></div>
+
+                <div id="chart" style="margin: 0 auto; width: 90%; min-height:350px;"></div>
 
                 <script> 
                 let chartData = []
@@ -83,8 +88,8 @@
                 {% for data in chartData %}
                 <script>
                     var current ={
-                        "labelName": "{{data.labelName}}",
-                        "labelValue": "{{data.labelValue}}"
+                        "labelName": "{{data.Crypto_Name}}",
+                        "labelValue": "{{data.Crypto_Value}}"
                     }
                     chartData.push(current)
 
@@ -107,16 +112,19 @@
                             </div>
                         </div> 
                     </div>
-                    {% for data in chartData %}
                     <div class="col-md-4">
+                        {% for data in chartData %}
+
                         <div class="card mb-4 shadow-sm">
+
                             <div class="card-body">
-                                <p class="card-text">{{ data.labelName }}: {{ data.labelValue }}</p>
+                                <p class="card-text">{{ data.Crypto_Name }}: {{ data.Crypto_Value }}</p>
                             </div>
                             
                         </div>
+                        {% endfor %}
+
                     </div>
-                    {% endfor %}
                     
                 </div>              
             </div>
