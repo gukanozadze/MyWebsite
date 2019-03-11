@@ -7,7 +7,6 @@ from .forms import ChartForm
 
 def home(request):
     chartData = Chart.objects.all()
-
     
     if request.method == 'POST':
         form = ChartForm(request.POST)
