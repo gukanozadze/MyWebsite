@@ -43,6 +43,7 @@ option = {
         }
     ]
 };
+<div id="chart" style="margin: 0 auto; width: 90%; min-height:350px;"></div>
 
 
 
