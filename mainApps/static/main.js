@@ -39,11 +39,10 @@ option = {
                     shadowOffsetX: 0,
                     shadowColor: 'rgba(0, 0, 0, 0.5)'
                 }
-            },
+            }
         }
     ]
 };
-<div id="chart" style="margin: 0 auto; width: 90%; min-height:350px;"></div>
 
 
 
