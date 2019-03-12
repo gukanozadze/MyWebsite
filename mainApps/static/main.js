@@ -1,7 +1,8 @@
+console.log(chartData)
 // based on prepared DOM, initialize echarts instance
-var myChart = echarts.init(document.getElementById('chart'));
+var dom = document.getElementById("pieChart");
 
-
+var myPieChart = echarts.init(dom);
 var data = genData(50);
 
 option = {
@@ -45,7 +46,6 @@ option = {
 };
 
 
-
 function genData(count) {
     
     var nameList = [];
@@ -57,6 +57,7 @@ function genData(count) {
     console.log(chartData)
     // My Edit
     for(let chart of chartData){
+        console.log(chart)
         nameList.push(chart.cryptocurrency_name)
         valueList.push(chart.cryptocurrency_value)
 
@@ -92,15 +93,6 @@ function genData(count) {
     }
 }
 
+myPieChart.setOption(option);
 
-
-
-
-// use configuration item and data specified to show chart
-myChart.setOption(option);
-$(window).on('resize', function(){
-    if(myChart != null && myChart != undefined){
-        myChart.resize();
-    }
-});
 // use configuration itemf and data specified to show chart

@@ -16,7 +16,7 @@ def home(request):
     else:
         form = ChartForm()
 
-    return render(request, 'mainApps/home.html', {'chartData': chartData, 'form': form})
+    return render(request, 'mainApps/home.html', {'pieChartData': chartData, 'form': form})
 
 
 def addChart(request):

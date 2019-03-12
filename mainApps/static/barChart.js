@@ -1,6 +1,6 @@
+
 var dom = document.getElementById("barChart");
-var myChart = echarts.init(dom);
-var lastIndex 
+var myBarChart = echarts.init(dom);
 
 var app = {};
 option = null;
@@ -176,9 +176,6 @@ option = {
         {
             name: 'showedBar',
             type: 'bar',
-            renderItem: function (params, api) {
-                console.log('ds')
-            },
             stack: 'sameName',
             itemStyle: {
                 barBorderColor: '#ffffff',
@@ -200,7 +197,7 @@ option = {
         }
     ],
 };
-myChart.setOption(option, true);
+myBarChart.setOption(option, true);
 
 
 // var dom = document.getElementById("chart");

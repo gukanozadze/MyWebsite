@@ -78,16 +78,16 @@ body{
         <div class="album py-5 bg-light" id="charts">
             <div class="container">
 
-                <div id="chart" style="margin: 0 auto; width: 90%; min-height:350px;"></div>
+                <div id="pieChart" style="margin: 0 auto; width: 90%; min-height:350px;"></div>
 
                 <script> 
                 let chartData = []
                 </script>
-                {% for data in chartData %}
+                {% for data in pieChartData %}
                 <script>
                     var current ={
-                        "labelName": "{{data.cryptocurrency_name}}",
-                        "labelValue": "{{data.cryptocurrency_value}}"
+                        "cryptocurrency_name": "{{data.cryptocurrency_name}}",
+                        "cryptocurrency_value": "{{data.cryptocurrency_value}}"
                     }
                     chartData.push(current)
 
@@ -114,7 +114,7 @@ body{
 
                 <div class="row">
                     
-                    {% for data in chartData %}
+                    {% for data in pieChartData %}
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                             <div class="card-body">
@@ -146,9 +146,9 @@ body{
 
     <script type="text/javascript" src="{% static 'echarts.js' %}"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="{% static 'barChart.js' %}"></script>
 
-    <script src="{% static 'main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'barChart.js' %}"></script>
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
 
 </body>
 
