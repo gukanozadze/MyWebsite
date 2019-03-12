@@ -6,3 +6,4 @@ class ChartForm(ModelForm):
     class Meta:
         model = Chart
         fields = '__all__' 
+        

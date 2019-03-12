@@ -57,12 +57,12 @@ function genData(count) {
     console.log(chartData)
     // My Edit
     for(let chart of chartData){
-        nameList.push(chart.labelName)
-        valueList.push(chart.labelValue)
+        nameList.push(chart.cryptocurrency_name)
+        valueList.push(chart.cryptocurrency_value)
 
         seriesData.push({
-            name: chart.labelName,
-            value: chart.labelValue
+            name: chart.cryptocurrency_name,
+            value: chart.cryptocurrency_value
         });
     }
 
