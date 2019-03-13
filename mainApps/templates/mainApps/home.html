@@ -40,38 +40,37 @@ body{
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
 
-                <a class="navbar-brand" href="{% url 'home' %}">Guka Nozadze</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <!--<a class="nav-link" href="{% static 'Geo_CV.pdf' %}">Resume</a>-->
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#barChartContainer">Bar Chart</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="#charts">Pie Chart</a>
+                    <a class="navbar-brand" href="{% url 'home' %}">Guka Nozadze</a>
+                    
+                    <div class="" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <!--<a class="nav-link" href="{% static 'Geo_CV.pdf' %}">Resume</a>-->
                             </li>
-                    </ul>
-                </div>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pieChart">Pie Chart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#barChartContainer">Bar Chart</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
             </div>
         </nav>
     </header>
 
     <main role="main">
 
-        <section class="jumbotron text-center">
-            <div class="container">
-                <p class="lead">Hey, my name is Guka Nozadze. This is My Website</p>
-               
-                <img class='img-fluid' src="{% static 'profile.png'%}">
+        <section class="jumbotron text-center ">
+            <div class="container ">
+                <a href="#charts"><button type="button" class="btn btn-info"><img class="img-fluid" width='40' src="{% static 'pie-chart-icon.png' %}"> Pie Chart</button></a>
+                <a href="#barChart"><button type="button" class="btn btn-info"><img class="img-fluid" width='40' src="{% static 'bar-chart-icon.png' %}"> Bar Chart</button></a>
+                
             </div>
         </section>
         
@@ -103,7 +102,9 @@ body{
                                     {% csrf_token %}
                                     
                                     {{ form|crispy }}
-                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    <button type="submit" class="ml-4 btn btn-primary">Add</button>
+                                    <a href="#barChart"><button type="button" class="ml-5 btn btn-info"><img class="img-fluid" width='20' src="{% static 'bar-chart-icon.png' %}"> Bar Chart</button></a>
+
                                 
                                 </form>
                         
@@ -128,13 +129,24 @@ body{
 
             </div>
         </div>
-        <div class="py-5 " id="barChartContainer" style="background: #1A1C54; height: 100vh">
+        <style>
+            .btn-on-bar-to-pie{
+                float: right
+            }
+            
+        </style>
+        <div id="barChartContainer" style="background: #1A1C54; height: 100vh">
             <div class="container">
-                <div id="barChart" style="width:100%; height: 500px"></div>
-                <div class="footer-copyright text-center text-light py-3">© 2019 Copyright
-                    Guka Nozadze
-                  </div>
+                <div id="barChart" style="width:100%; height: 470px"></div>
+                <div class="footer-copyright text-center text-light py-3 mt-5">
+                        © 2019 Copyright Guka Nozadze
+                </div>
+                
             </div>
+            <div class="text-center">
+                    <a href="#charts"><button type="button" class="btn btn-info btn-on-bar-to-pie"><img class="img-fluid up" width='40' src="{% static 'up-arrow.png' %}"></button></a>
+                </div>
+                
         </div>
     </main>
 
@@ -148,7 +160,9 @@ body{
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="{% static 'barChart.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pieChart.js' %}"></script>
     <script type="text/javascript" src="{% static 'main.js' %}"></script>
+
 
 </body>
 

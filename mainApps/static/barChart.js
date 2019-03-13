@@ -73,7 +73,6 @@ function setColors(valueData){
     }
 }
 setColors(valueData)
-console.log(colors)
 
 var finalBarData = []
 for (let i = 0; i < barChartData.length; i++) {
@@ -83,7 +82,6 @@ for (let i = 0; i < barChartData.length; i++) {
     }
     finalBarData.push(element)
 }
-console.log(finalBarData)
 
 option = {
     
@@ -157,12 +155,16 @@ option = {
     },
     series: [
         {   
+            cursor: 'disabled',
             name: 'hiddenBar',
             type: 'bar',
             barCategoryGap: '50%', // Width of bars
             stack:  'sameName',
             itemStyle: {
+            cursos: 'none',
+
                 normal: {
+                    
                     barBorderColor: 'rgba(0,0,0,0)',
                     color: 'rgba(0,0,0,0)'
                 },
@@ -180,13 +182,6 @@ option = {
             itemStyle: {
                 barBorderColor: '#ffffff',
                 barBorderWidth: 0,
-                color: new echarts.graphic.LinearGradient(
-                    0, 0, 0, 1,
-                    [
-                        {offset: 0, color: '#5EF8F6'},
-                        {offset: 1, color: '#2AE14D'}
-                    ]
-                ),
                 barBorderRadius: [5, 5, 5, 5], // Border Radius of 4 corners
 
                 emphasis: {
