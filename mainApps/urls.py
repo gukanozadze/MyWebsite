@@ -16,7 +16,7 @@ urlpatterns = [
     path('viewall', views.viewall),
 
 
-    
+
 
 
 
