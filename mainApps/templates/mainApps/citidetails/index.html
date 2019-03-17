@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="{% static 'citidetails/main.css' %}">
+</head>
+<body>
+    <nav >
+        <div class="logo text-left ml-5" style="float:left">
+                <img src="{% static 'citidetails/img/default.jpg' %}"  width="50px">
+
+        </div>
+        <div class="nav-right text-right mr-4">
+            
+                <img src="{% static 'citidetails/img/default.jpg' %}" class="rounded-circle align-middle mr-3" width="50px">
+                <i class="fas fa-angle-down fa-2x align-middle" ></i>
+        </div>
+    </nav>
+    <div class="main-page">
+        <div class="row">
+            <div class="dashboard-navigation col-1">
+                <ul class="align-middle">
+                    <li><span class="list-text"><img src="{% static 'citidetails/img/speedometr.png' %}"> Dashboard</span></li>
+                    <li><span class="list-text"><img src="{% static 'citidetails/img/crown.png' %}">Master</span></li>
+                    <li><span class="list-text"><img src="{% static 'citidetails/img/customer.png' %}">Customer</span></li>
+                    <li><span class="list-text"><img src="{% static 'citidetails/img/quotes.png' %}">Quotes</span></li>
+                    <li><span class="list-text"><img src="{% static 'citidetails/img/phone.png' %}">Contacts</span></li>
+                    <li><span class="list-text"><img src="{% static 'citidetails/img/marketing.png' %}">Marketing</span></li>
+                    <li><span class="list-text"><img src="{% static 'citidetails/img/reward.png' %}">rewards</span></li>
+
+                </ul>
+            </div>
+            
+            <div class="col-11 mt-5">
+                <span class="master-span">City Details</span>
+
+                <div class="main-dashboard mt-3">
+                    
+                    <div class="city-dashboard">
+                        <p class="mt-4">City</p>
+                        <div class="select-group">
+                            
+                            <span class="text-muted">Select City</span><br>
+                            <select name="category" aria-placeholder="" form="carform">
+                                <option value="">Mumbai</option>
+                                <option value="soccer">Berlin</option>
+                                <option value="tenis">Helsinki</option>
+                                <option value="basketball">Tokyo</option>
+                            </select>
+                            <div class="add-new">
+                                <img src="{% static 'citidetails/img/PLUS.png' %}"> Add new City
+                            </div>
+                            <br>
+
+                            <span class="text-muted mt-4">Select Category</span><br>
+                            <select name="category" aria-placeholder="" form="carform">
+                                <option value="">Fitness</option>
+                                <option value="soccer">Berlin</option>
+                                <option value="tenis">Helsinki</option>
+                                <option value="basketball">Tokyo</option>
+                            </select>
+                            <div class="add-new">
+                                    <img src="{% static 'citidetails/img/PLUS.png' %}"> Add new Category
+                                </div>
+                            <br>
+
+                        </div>
+                        <div class="holder">
+                                <p>Select Sport</p> <hr>
+                                <ul>
+                                    <li><img src="{% static 'citidetails/img/default.jpg' %}" class="rounded-circle" width='50px'>Football</li>
+                                    <li><img src="{% static 'citidetails/img/default.jpg' %}" class="rounded-circle" width='50px'>Babmiton</li>
+                                    <li><img src="{% static 'citidetails/img/default.jpg' %}" class="rounded-circle" width='50px'>Basketball</li>
+                                    <li><img src="{% static 'citidetails/img/default.jpg' %}" class="rounded-circle" width='50px'>Football</li>
+                                    <li><img src="{% static 'citidetails/img/default.jpg' %}" class="rounded-circle" width='50px'>Rugby</li>
+                                    <li><img src="{% static 'citidetails/img/default.jpg' %}" class="rounded-circle" width='50px'>Volleyball</li>
+                                </ul>
+                                
+                        </div>
+                        <div class="add-new"  style="margin: 30px 10%">
+                                <img src="{% static 'citidetails/img/PLUS.png' %}"> Add new Category
+                        </div><br>
+                        <div class="text-center">
+                            <button class="add-button" style="margin-top: 20px;">Add</button>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+                <div class="main-dashboard main-dashboard-table mt-3">
+                    
+                    <table>
+                        <tr>
+                            <th>№</th>
+                            <th>City</th>
+                            <th>Category</th>
+                            <th style="max-width: 210px">Sport</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                                <td>1</td>
+                                <td>Mumbai</td>
+                                <td>Winter Sports</td>
+                                <td class="td-sport"><button class="td-categories" type="button">Yoga</button>
+                                    <button class="td-categories" type="button">Yoga<img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+    
+                                    <button class="td-categories" type="button">Adventure Sport</button></td>
+                                <td><button class="edit">Edit</button></td>
+                            </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dehli</td>
+                            <td>Winter Sports</td>
+                            <td class="td-sport"><button class="td-categories" type="button">Yoga<img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+                                <button class="td-categories" type="button">Yoga<img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+                                <button class="td-categories" type="button">Yoga<img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+                                <button class="td-categories" type="button">Adventure Sport<img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+                                <button class="td-categories" type="button">Adventure Sport<img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+
+                                <button class="td-categories" type="button">Adventure Sport<img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+
+                                <button class="td-categories" type="button">Yoga<img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button> <p class="small-p">show</p></td>
+
+                            <td ><button class="edit active">Editing</button><br>
+                                <div style=" margin-top: 25px">
+                                    <div class="add-new " style="font-size:15px; margin-left:0;">
+                                        <img src="{% static 'citidetails/img/PLUS.png' %}" width="14px"> Add Sport
+                                    </div>
+                                </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Moscow</td>
+                            <td>Fitness<br>
+                                Winter Sports</td>
+                            <td class="td-sport"><button class="td-categories" type="button">Yoga <img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+                                <button class="td-categories" type="button">Yoga <img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+                                <button class="td-categories" type="button">Hide <img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button><p class="small-p">show</p>
+                                <button class="td-categories" type="button">Adventure Sport <img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button>
+                                <button class="td-categories" type="button">Yoga <img src="{% static 'citidetails/img/cross.png' %}" width="12px"></button></td>
+                            <td><button class="edit">Edit</button></td>
+                        </tr>
+
+                    </table>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

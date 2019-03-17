@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'Dashboard/main.css' %}">
+</head>
+<body>
+    <nav >
+        <div class="logo text-left ml-5" style="float:left">
+                <img src="{% static 'Dashboard/img/default.jpg' %}"  width="50px">
+
+        </div>
+        <div class="nav-right text-right mr-4">
+            
+                <img src="{% static 'Dashboard/img/default.jpg' %}" class="rounded-circle align-middle mr-3" width="50px">
+                <i class="fas fa-angle-down fa-2x align-middle" ></i>
+        </div>
+    </nav>
+    <div class="main-page">
+        <div class="row">
+            <div class="dashboard-navigation col-1">
+                <ul class="align-middle">
+                    <li><span class="list-text"><img src="{% static 'Dashboard/img/speedometr.png' %}"> Dashboard</span></li>
+                    <li><span class="list-text"><img src="{% static 'Dashboard/img/crown.png' %}">Master</span></li>
+                    <li><span class="list-text"><img src="{% static 'Dashboard/img/customer.png' %}">Customer</span></li>
+                    <li><span class="list-text"><img src="{% static 'Dashboard/img/quotes.png' %}">Quotes</span></li>
+                    <li><span class="list-text"><img src="{% static 'Dashboard/img/phone.png' %}">Contacts</span></li>
+                    <li><span class="list-text"><img src="{% static 'Dashboard/img/marketing.png' %}">Marketing</span></li>
+                    <li><span class="list-text"><img src="{% static 'Dashboard/img/reward.png' %}">rewards</span></li>
+
+                </ul>
+            </div>
+            
+            <div class="col-11 mt-5 pl-4">
+                <span class="master-span">DASHBOARD</span><br>
+                <div class="text-left">
+                    <div class="content-box">
+                        <div class="row">
+                            <div class="top-section col-6 text-left">
+                                <span class="top">cities</span>
+
+                            </div>
+                            <div class="col-6">
+                                <span class="bottom">08</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                            <div class="row">
+                                <div class="top-section col-6 text-left">
+                                    <span class="top">Sports</span>
+    
+                                </div>
+                                <div class="col-6">
+                                    <span class="bottom">11</span>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                                <div class="row">
+                                    <div class="top-section col-6 text-left">
+                                        <span class="top">Quotes</span>
+        
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="bottom">05</span>
+        
+                                    </div>
+                                </div>
+                        </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
