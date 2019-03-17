@@ -236,6 +236,7 @@ img.logo{
 
 input[name='emailOrNumber']{
     padding: 9px;
+    margin-bottom: 20px;
 }
 
 input[name='password'], input[name='emailOrNumber']{
