@@ -5,18 +5,18 @@ from .forms import ChartForm
 
 
 
-def home(request):
+def charts(request):
     chartData = Chart.objects.all()
     
     if request.method == 'POST':
         form = ChartForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('charts')
     else:
         form = ChartForm()
 
-    return render(request, 'mainApps/home.html', {'pieChartData': chartData, 'form': form})
+    return render(request, 'mainApps/charts.html', {'pieChartData': chartData, 'form': form, 'title': 'Charts'})
 
 
 def addChart(request):
@@ -24,7 +24,7 @@ def addChart(request):
         form = ChartForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('charts')
     else:
         form = ChartForm()
 
@@ -34,3 +34,6 @@ def addChart(request):
 def chartsAPI(request):
     charts = Chart.objects.all()
     return render(request, 'mainApps/chartsAPI.html', {'charts': charts})
+
+def projects(request):
+    return render(request, 'mainApps/projects.html', {'title': 'Projects'})

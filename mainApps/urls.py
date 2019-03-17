@@ -6,5 +6,8 @@ from . import views
 
 urlpatterns = [
     path('addchart/', views.addChart, name='chart-form'),
-    path('', views.home, name='home'),
+    path('', views.projects),
+    path('projects/', views.projects, name='projects'),
+    path('projects/charts', views.charts, name='charts'),
+
 ] 
