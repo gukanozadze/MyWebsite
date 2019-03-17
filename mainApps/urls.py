@@ -9,13 +9,16 @@ urlpatterns = [
     path('', views.projects),
     path('projects/', views.projects, name='projects'),
     path('projects/charts', views.charts, name='charts'),
-    path('addcity', views.addcity),
-    path('login', views.login),
 
-    path('addsport', views.addsport),
-    path('citydetails', views.citydetails),
-    path('dashboard', views.Dashboard),
-    path('viewall', views.viewall),
+    # UPWORK
+    path('addcity', views.addcity, name='addcity'),
+    path('login', views.login, name='login'),
+    path('addsport', views.addsport, name='addsport'),
+    path('citydetails', views.citydetails, name='addcategory'),
+    path('dashboard', views.Dashboard, name='dashboard'),
+    path('viewall', views.viewall, name='viewall'),
+    path('popup', views.popup, name='popup'),
+
 
 
 

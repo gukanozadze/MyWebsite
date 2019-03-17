@@ -1,0 +1,82 @@
+/* ADMIN LOGIN */
+img.top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img.bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+img.top-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+img.logo{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.form-box{
+    padding: 0px 100px;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    border-left: 3px solid #E1DDDD;
+}
+
+input[name='emailOrNumber']{
+    padding: 9px;
+    margin-bottom: 20px;
+}
+
+input[name='password'], input[name='emailOrNumber']{
+    width: 100%;
+    padding: 9px;
+}
+
+button.sign-in{
+
+    border: none;
+    color: white;
+    width: 100%;
+    background-color: #F05328;
+    padding: 15px 5px;
+    font-size: 19px;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1280px){
+    img.login {
+        display: none
+    }
+
+    img.logo {
+        display: block;
+        position: absolute;
+        top:20px;
+        width: 100px;
+        left:20px;
+    }
+
+    .form-box{
+        position: relative;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        padding: 0px 0px;
+        text-align: center;
+        width: 60%;
+        height: 300px;
+        border-left: none;
+    }
+}

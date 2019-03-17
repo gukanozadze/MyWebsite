@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static%}
+        {% load static %}
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,15 +11,17 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/mainUpWork.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
 </head>
 <body style="background: white">
 
-    <img class="top-left" src="{% static 'img/login-top' %}-left-image.png">
-    <img class="top-right" src="{% static 'img/login-top' %}-right-image.png">
-    <img class="bottom-left" src="{% static 'img/login-bottom' %}-left-image.png">
+    <img class="login top-left" src="{% static 'img/login-top-left-image.png' %}">
+    <img class="login top-right" src="{% static 'img/login-top-right-image.png' %}">
+    <img class="login bottom-left" src="{% static 'img/login-bottom-left-image.png' %}">
     
 
-        <img class="logo" src="{% static 'img/logo.png' %}">
+        <img class="logo login" src="{% static 'img/logo.png' %}">
         <div class="form-box">
             <p>Admin Login</p>
             <form class="text-right">
