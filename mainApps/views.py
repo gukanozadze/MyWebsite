@@ -39,8 +39,11 @@ def projects(request):
     return render(request, 'mainApps/projects.html', {'title': 'Projects'})
 
 
-def addCity(request):
-    return render(request, 'mainApps/AddCity/index.html', {'title': 'Projects'})
+def addcity(request):
+    return render(request, 'mainApps/addcity.html', {'title': 'Projects'})
+
+def login(request):
+    return render(request, 'mainApps/login.html', {'title': 'Projects'})
 
 def addsport(request):
     return render(request, 'mainApps/addsport/index.html', {'title': 'Projects'})
