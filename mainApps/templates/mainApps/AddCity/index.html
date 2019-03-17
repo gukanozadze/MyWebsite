@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-{% load static %}
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,8 +26,8 @@
         </div>
     </nav>
     <div class="main-page">
-        <div class="row">
-            <div class="dashboard-navigation col-1">
+        <div class="main_contents">
+            <div class="dashboard-navigation">
                 <ul class="align-middle">
                     <li><span class="list-text"><img src="{% static 'AddCity/img/speedometr.png' %}"> Dashboard</span></li>
                     <li><span class="list-text active"><img src="{% static 'AddCity/img/crown.png' %}" class="active">Master</span></li>
@@ -41,11 +40,11 @@
                 </ul>
             </div>
             
-            <div class="col-11 mt-5">
+            <div class="mt-5">
                 <span class="master-span">MASTER</span>
 
                 <div class="main-dashboard mt-3">
-                    <div class="main-dashboard-categories row text-center pt-3">
+                    <div class="main-dashboard-categories row text-center pt-3 ml-0 mr-0">
                         <div class="col-3 active">Add City</div>
                         <div class="col-3">Add Category</div>
                         <div class="col-3">Add Sport</div>
