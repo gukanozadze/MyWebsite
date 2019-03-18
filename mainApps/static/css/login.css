@@ -80,3 +80,10 @@ button.sign-in{
         border-left: none;
     }
 }
+
+@media screen and (max-width: 600px){
+
+    .form-box{
+        padding-top: 100px;
+    }
+}

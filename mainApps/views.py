@@ -52,6 +52,9 @@ def addsport(request):
 def citydetails(request):
     return render(request, 'mainApps/citydetails.html')
 
+def addcategory(request):
+    return render(request, 'mainApps/addcategory.html')
+
 def Dashboard(request):
     return render(request, 'mainApps/dashboard.html')
 
