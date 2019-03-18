@@ -109,6 +109,11 @@ select{
         padding: 0px 15px;
         padding-left: 0;
     }
+
+    .city-details.add-new{
+        display: block;
+        margin-left: 5px;
+    }
 }
 
 @media screen and (max-width: 830px){

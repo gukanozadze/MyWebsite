@@ -41,22 +41,22 @@ def projects(request):
 
 # UPWORK 
 def addcity(request):
-    return render(request, 'mainApps/addcity.html', {'title': 'Projects'})
+    return render(request, 'mainApps/addcity.html')
 
 def login(request):
-    return render(request, 'mainApps/login.html', {'title': 'Projects'})
+    return render(request, 'mainApps/login.html')
 
 def addsport(request):
-    return render(request, 'mainApps/addsport.html', {'title': 'Projects'})
+    return render(request, 'mainApps/addsport.html')
 
 def citydetails(request):
-    return render(request, 'mainApps/citydetails.html', {'title': 'Projects'})
+    return render(request, 'mainApps/citydetails.html')
 
 def Dashboard(request):
-    return render(request, 'mainApps/dashboard.html', {'title': 'Projects'})
+    return render(request, 'mainApps/dashboard.html')
 
 def viewall(request):
-    return render(request, 'mainApps/viewall.html', {'title': 'Projects'})
+    return render(request, 'mainApps/viewall.html')
 
 def popup(request):
-    return render(request, 'mainApps/popup.html', {'title': 'Projects'})
+    return render(request, 'mainApps/popup.html')

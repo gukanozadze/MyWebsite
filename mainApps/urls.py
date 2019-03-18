@@ -17,13 +17,5 @@ urlpatterns = [
     path('citydetails', views.citydetails, name='addcategory'),
     path('dashboard', views.Dashboard, name='dashboard'),
     path('viewall', views.viewall, name='viewall'),
-    path('popup', views.popup, name='popup'),
-
-
-
-
-
-
-
-
+    path('popup', views.popup, name='popup')
 ] 
