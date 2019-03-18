@@ -51,4 +51,7 @@ input, select, button.file-button, button.add-button{
         font-size: 13px;
 
     }
+    p{
+        font-size: 22px;
+    }
 }
