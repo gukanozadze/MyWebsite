@@ -63,3 +63,6 @@ def viewall(request):
 
 def popup(request):
     return render(request, 'mainApps/popup.html')
+
+def foodPage(request):
+    return render(request, 'mainApps/foodPage.html')

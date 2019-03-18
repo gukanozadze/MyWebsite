@@ -19,5 +19,7 @@ urlpatterns = [
 
     path('dashboard', views.Dashboard, name='dashboard'),
     path('viewall', views.viewall, name='viewall'),
-    path('popup', views.popup, name='popup')
+    path('popup', views.popup, name='popup'),
+    path('foodpage', views.foodPage, name='food-page'),
+
 ] 
