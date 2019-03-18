@@ -43,6 +43,8 @@ nav{
     margin-bottom:20px;
     font-weight: bold;
     font-size:12px;
+    text-transform: uppercase;
+
     overflow: hidden;
 }
 
@@ -95,6 +97,7 @@ nav{
 /* Main dashboard (Main Section)*/
 .inner-dashboard{
     padding: 15px 50px;
+    padding-top: 0px;
 }
 
 input[name='city-name']{
@@ -191,6 +194,20 @@ button.city-button{
         padding-left: 25px;
         padding-right: 15px;
     }
+}
+
+@media screen and (max-width: 390px){
+
+    /* Main Dashboard Links*/
+    .main-dashboard-categories a{
+        font-size: 7px;
+    }
+
+    .main-dashboard-categories div{
+        padding-left:5px;
+        padding-right:2px;
+    }
+    
 }
 
 
