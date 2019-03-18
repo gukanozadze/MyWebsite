@@ -196,7 +196,7 @@ button.city-button{
     }
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 435px){
 
     /* Main Dashboard Links*/
     .main-dashboard-categories a{
