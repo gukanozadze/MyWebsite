@@ -11,7 +11,6 @@ html{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-
 }
 
 /* ********************************************* */
@@ -44,9 +43,7 @@ h1{
     font-size: 200%;
     color: #fff;
     letter-spacing: 1px;
-
 }
-
 
 h2{
     font-size: 175%;
@@ -54,7 +51,6 @@ h2{
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
-
 }
 
 h3{
@@ -90,9 +86,7 @@ h2:after{
     display: block;
     color: #e67d22;
     margin-bottom: 15px;
-
 }
-
 
 /* ******** BUTTONS ********* */
 .btn:link,
@@ -123,7 +117,6 @@ h2:after{
 .btn-full:active{
     background-color: #e45b00; 
     border: 1px solid #e45b00
-
 }
 
 .btn-ghost:hover,
@@ -182,7 +175,6 @@ header{
     font-size: 90%;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
-
     transition: border 0.3s;
 }
 
@@ -211,21 +203,72 @@ header{
     padding: 0
 }
 .section-meals-image-holder{
-    padding: 0;
     width: 100%;
     overflow: hidden;
     background-color: black;
 }
-
 .section-meals-image-holder img{
     width: 100%;
     transition: transform 0.5s ease, opacity 0.5s ease;
     transform: scale(1.15);
     opacity: 0.7;
-
 }
 .section-meals img:hover{
     transform: scale(1.03);
     opacity: 1;
+}
 
+/* ****************************************************/
+/* HOW IT WORKS ***************************************/
+/* ****************************************************/
+
+.section-steps{
+    background-color: rgb(238, 238, 238)
+}
+
+.steps-box{
+    margin-top: 60px; 
+}
+
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 5%;
+}
+
+.steps-box:last-child{
+    padding-left: 5%;
+    margin-top:100px;
+}
+
+.app-screen{
+    width: 40%; 
+}
+
+.works-step{
+
+    margin-bottom: 50px;
+}
+.works-step:last-of-type{
+
+    margin-bottom:  90px;
+}
+
+.works-step div{
+    float:left;
+    margin-right: 35px;
+    height: 55px;
+    width: 55px;
+    font-size: 150%;
+    border: 2px solid #e67d22;
+    color: #e67d22;
+    text-align: center;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.btn-app img{
+    width: auto;
+    height: 50px;
+    margin-right: 35px;
 }
