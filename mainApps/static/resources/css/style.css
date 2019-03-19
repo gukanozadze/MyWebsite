@@ -63,7 +63,7 @@ h2:after{
     height: 2px;
     background-color: #e67d22;
     content: " ";
-    width: 200px;
+    width: 150px;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -138,6 +138,8 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
+
 }
 
 .hero-text-box{
@@ -271,4 +273,63 @@ header{
     width: auto;
     height: 50px;
     margin-right: 35px;
+}
+
+
+/* ****************************************************/
+/* CITY SECTION ***************************************/
+/* ****************************************************/
+
+.city-content img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.city-feature ion-icon{
+    color: #e67d22;
+    font-size: 110%;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-top: -4px
+}
+
+.city-feature{
+    margin-bottom: 10px;
+}
+
+
+/* ****************************************************/
+/* CUSTOMER SECTION ***************************************/
+/* ****************************************************/
+.customer-section{
+    background-image: linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.9)), url('img/back-customers.jpg');
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 150px;
+}
+.customer-box{
+    margin-top: 50px;
+    padding: 5px
+}
+
+.customer-box ion-icon{
+    font-size: 250%;
+}
+.customer-text{
+    margin-top: 25px;
+    letter-spacing: 1px;
+    line-height: 140%;
+}
+
+.customer-image{
+    margin-top: 40px;
+}
+
+.customer-image img{
+    margin-right: 10px;
+    width: 70px;
+    border-radius: 100%;
+    vertical-align: middle
 }
