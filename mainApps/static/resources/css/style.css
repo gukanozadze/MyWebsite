@@ -65,7 +65,7 @@ h2:after{
     content: " ";
     width: 150px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /* ******** PARAGRAPHS ********* */
@@ -88,9 +88,16 @@ h2:after{
     margin-bottom: 15px;
 }
 
+.icon-small{
+    font-size: 100%;
+    color: #e67d22;
+    margin-right: 15px;
+}
+
 /* ******** BUTTONS ********* */
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -98,13 +105,22 @@ h2:after{
     color: #fff;
     border-radius: 200px;
     transition: background-color 0.2s;
+    cursor: pointer;
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     background-color: #e67e22; 
     border: 1px solid #e67e22;
     margin-right: 15px;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover{
+    background-color: #e45b00; 
+    border: 1px solid #e45b00
 }
 
 .btn-ghost:link,
@@ -113,11 +129,6 @@ h2:after{
     color: #e67d22;
 }
 
-.btn-full:hover,
-.btn-full:active{
-    background-color: #e45b00; 
-    border: 1px solid #e45b00
-}
 
 .btn-ghost:hover,
 .btn-ghost:active{
@@ -126,7 +137,8 @@ h2:after{
 }
 
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]:hover{
     background-color: #e45b00
 }
 
@@ -332,4 +344,131 @@ header{
     width: 70px;
     border-radius: 100%;
     vertical-align: middle
+}
+/* ****************************************************/
+/* SECTION PLAN ***************************************/
+/* ****************************************************/
+.section-plans{
+    background-color: rgb(238, 238, 238)
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.plan-box div{
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(243, 243, 243)
+}
+
+.plan-box div:last-of-type{
+    text-align: center;
+    border: none;
+}
+
+.plan-box div:first-of-type{
+    background-color: #fbfbfb
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight:100;
+    color: #e67d22
+}
+.plan-price span{
+    font-size: 30%;
+    margin-bottom: 10px;
+    font-weight: 300
+}
+
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 10px 0;
+}
+
+
+/* ****************************************************/
+/* FORM FORM ***************************************/
+/* ****************************************************/
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    font-weight: 300;
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    border: 1px solid #b9b9b9;
+
+}
+
+
+input[type=checkbox]{
+    margin: 10px 10px 10px 0px;
+}
+
+*:focus{
+    outline: none;
+    transition: all 0.3s ease
+}
+
+
+
+
+/* ****************************************************/
+/* FOOTER ***************************************/
+/* ****************************************************/
+footer{
+    padding: 40px 0px;
+    padding-bottom: 80px;
+
+    background: #272727
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-right:20px;
+
+}
+footer ul li:last-of-type{
+    margin-right:0px;
+
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #e67d22
+}
+.social-links-box{
+    text-align: right
+}
+
+footer p{
+    margin-top: 40px;
+    color: #e67d22;
+    font-weight: 400;
+    text-align: center
 }
