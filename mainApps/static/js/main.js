@@ -6,7 +6,7 @@ $("a[href^='#'").on('click', function(e){
 
     $('html, body').animate({
         'scrollTop': $target.offset().top
-    }, 1500,'swing', function(){
+    }, 1100,'swing', function(){
         window.location.hash = target
     })
 })
