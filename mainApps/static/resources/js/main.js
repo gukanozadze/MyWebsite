@@ -6,13 +6,13 @@ $("a[href^='#'").on('click', function(e){
 
     $('html, body').animate({
         'scrollTop': $target.offset().top
-    }, 1100,'swing', function(){
+    }, 800,'swing', function(){
         window.location.hash = target
     })
 })
 
 
-
+// Navbar toggle
 const toggleNavBar = function() {
     const burger = $('.burger')
     const nav = $('.nav_links')
@@ -41,6 +41,7 @@ const hoverProject = function(){
     const link =$(this).attr('redirect')
     window.location.replace(link);
 }
-
 $('.project').click(hoverProject)
+
+
 

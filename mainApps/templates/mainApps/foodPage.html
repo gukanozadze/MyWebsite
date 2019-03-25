@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400" >
 
 
-        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'resources/css/foodpage.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'resources/css/queries.css' %}">
 
         <meta charset="UTF-8">
@@ -18,16 +18,23 @@
     </head>
 
     <body>
-        <header>
-            <nav>
+        <header id="header">
+            <nav class="preload">
                 <div class="row">
                     <img src="{% static 'resources/img/logo-white.png' %}" alt="white logo" class="logo">
-                    <ul class="main-nav">
+                    <img src="{% static 'resources/img/logo.png' %}" alt="black logo" class="black-logo active">
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>                
+                    </div>
+                    <ul class="main-nav preload">
                         <li><a href="#how-it-works">How it works</a></li>
                         <li><a href="#cities">Cities</a></li>
                         <li><a href="#sign-up">Sign up</a></li>
                     </ul>
                 </div>
+                
             </nav>
 
 
@@ -402,7 +409,9 @@
         </footer>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-        <script src="{% static 'js/main.js' %}"></script>
+        <script type="text/javascript" src="{% static 'vendors/js/noframework.waypoints.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'resources/js/foodPage.js' %}"></script>
+        
         <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     </body>
 </html>

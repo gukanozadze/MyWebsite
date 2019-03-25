@@ -7,8 +7,8 @@
 
         <section class="text-center bg-light">
             <div class="container pt-4 mb-3">
-                <a href="#charts"><button type="button" class="btn btn-info"><img class="img-fluid" width='40' src="{% static 'pie-chart-icon.png' %}"> Pie Chart</button></a>
-                <a href="#barChart"><button type="button" class="btn btn-info"><img class="img-fluid" width='40' src="{% static 'bar-chart-icon.png' %}"> Bar Chart</button></a>
+                <a href="#charts"><button type="button" class="btn btn-info"><img class="img-fluid" width='40' src="{% static 'resources/img/pie-chart-icon.png' %}"> Pie Chart</button></a>
+                <a href="#barChart"><button type="button" class="btn btn-info"><img class="img-fluid" width='40' src="{% static 'resources/img/bar-chart-icon.png' %}"> Bar Chart</button></a>
                 <p class="text-muted mt-1 p-0">This page is not responsive</p>
             
             </div>
@@ -44,7 +44,7 @@
                                     
                                     {{ form|crispy }}
                                     <button type="submit" class="ml-4 btn btn-primary">Add</button>
-                                    <a href="#barChart"><button type="button" class="ml-5 btn btn-info"><img class="img-fluid" width='20' src="{% static 'bar-chart-icon.png' %}"> Bar Chart</button></a>
+                                    <a href="#barChart"><button type="button" class="ml-5 btn btn-info"><img class="img-fluid" width='20' src="{% static 'resources/img/bar-chart-icon.png' %}"> Bar Chart</button></a>
 
                                 
                                 </form>
@@ -87,14 +87,14 @@
                 
             </div>
             <div class="text-center">
-                <a href="#charts"><button type="button" class="btn btn-info btn-on-bar-to-pie"><img class="img-fluid up" width='40' src="{% static 'up-arrow.png' %}"></button></a>
+                <a href="#charts"><button type="button" class="btn btn-info btn-on-bar-to-pie"><img class="img-fluid up" width='40' src="{% static 'resources/img/up-arrow.png' %}"></button></a>
             </div>
                 
         </div>
-        <script type="text/javascript" src="{% static 'js/echarts.js' %}"></script>
+        <script type="text/javascript" src="{% static 'resources/js/echarts.js' %}"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
     
-        <script type="text/javascript" src="{% static 'js/barChart.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/pieChart.js' %}"></script>
+        <script type="text/javascript" src="{% static 'resources/js/barChart.js' %}"></script>
+        <script type="text/javascript" src="{% static 'resources/js/pieChart.js' %}"></script>
    {% endblock %}
    

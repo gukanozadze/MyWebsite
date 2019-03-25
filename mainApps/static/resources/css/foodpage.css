@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: none;
+}
+
+.preload{
+    transition: none !important;
 }
 
 html{
@@ -151,7 +156,6 @@ header{
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
-
 }
 
 .hero-text-box{
@@ -161,7 +165,9 @@ header{
     left:50%;
     transform: translate(-50%, -50%)
 }
-
+.black-logo{
+    display: none;
+}
 .logo{
     height: 100px;
     width: auto;
@@ -169,6 +175,7 @@ header{
     margin-top: 20px;
 }
 
+/* Main Nav */
 .main-nav{
     float: right;
     list-style: none;

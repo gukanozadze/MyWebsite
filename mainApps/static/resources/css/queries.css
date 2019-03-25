@@ -63,7 +63,6 @@
     section{ padding: 30px 0px}
     .row {padding: 0px 4%}
     .col {width: 100%}
-    .main-nav {display: none}
 
     .long-copy{ width: 100%; margin-left: 0}
 
@@ -108,6 +107,7 @@
 /* Small Phones 0-480px */
 @media only screen and (max-width: 500px){
     section{padding: 25px 0}
+
     form{width: 100%}
     .customer-section{ padding-bottom: 35px }
     .contact-form .row{ margin-bottom: 15px }
@@ -122,6 +122,128 @@
     footer li{ margin-top: 10px }
     .btn-app img{ height: 35px }
     
+
+
+    /* Bar Burger Nav*/
+    /* Burger */
+    .burger{
+        cursor: pointer;
+        display: block;
+        margin-top: 30px;
+        margin-right: 10px;
+        float: right;
+    }
+    .burger div{
+        width: 30px;
+        height: 2px;
+        margin: 5px;
+        background-color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    .burger.scrolled div{
+        background: black;
+    }
+
+    .burger.clicked .line1{
+        transform: rotate(-45deg) translate(-5px, 5px)
+    }
+
+    .burger.clicked .line2{
+        opacity: 0;
+    }
+
+    .burger.clicked .line3{
+        transform: rotate(45deg) translate(-5px, -5px)
+    }
+
+    
+
+    /* Minified NAV */
+    nav.scrolled{
+        animation: navScroll 0.5s forwards;
+
+    }
+    .main-nav {
+        position: absolute;
+        width: 50%;
+        top: 0;
+        right:0;
+        z-index: 100;
+        height: 100vh;
+        background: rgba(0, 0, 0, .2);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 80px;
+        transform: translateX(100%);
+        transition: all 0.5s ease;
+    }
+
+    .main-nav li{
+        display: flex;
+        padding:0;
+        margin:0;
+        opacity: 0;
+        justify-content: center;
+        font-size: 120%
+    }
+
+    .main-nav li a:link{
+        color: white;
+        text-align: center;
+    }
+
+
+    .main-nav.clicked{
+        transform: translateX(0%)
+    }
+
+    /* Scrolled NAV */
+    .main-nav.scrolled {
+        background: white;
+
+    }
+
+    .main-nav.scrolled li a:link{
+        color: black;
+        text-align: center;
+    }
+
+    .black-logo{
+        height: 60px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    
+    nav.scrolled{
+        background: white;
+        position: fixed;
+        width:100% ;
+        z-index: 999;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, .2)
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px)
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px)
+        }
+    }
+
+    @keyframes navScroll{
+        from{
+            transform: translateY(-50px)
+        }
+        to{
+            transform: translateY(0px)
+        }
+    }
 }
 
 
