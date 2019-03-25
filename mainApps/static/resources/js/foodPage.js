@@ -4,22 +4,34 @@ $( document ).ready(function() {
     $("nav").removeClass("preload");
 });
 
+// Animation on links
 $("a[href^='#'").on('click', function(e){
     e.preventDefault()
-    var $target = $(this.hash)
+    
+    const $target = $(this.hash)
 
+    const $currentPosition = $(document).scrollTop()
+    const $destination = $target.offset().top
+    const $length = Math.abs($currentPosition - $destination)
+
+    let animationDuration = $length/2.6
+
+    if (animationDuration < 900) animationDuration = 900
+
+    console.log($target.offset().top - $(document).scrollTop(), animationDuration)
+    
     $('html, body').animate({
         'scrollTop': $target.offset().top - 80 // Padding of section
-    }, 1000,'swing')
+    }, animationDuration,'swing')
 })
 
-const $burger = $('.burger')
+
 // /* FOOD PAGE NAV BAR ON SCROLL */
-var waypoint = new Waypoint({
+const $burger = $('.burger')
+const waypoint = new Waypoint({
     element: document.getElementById('section-features'),
     handler: function(direction) {
         //console.log(this.element.id + ' Susla ylea ' + this.triggerPoint)
-        console.log(' Susla ylea ')
         const $nav = $('nav')
         const $navUl = $('nav .main-nav')
 
@@ -53,3 +65,17 @@ $burger.on('click', () => {
         }
     })
 })  
+
+
+// Detecting resize to change navigation
+var $window = $(window);
+var $nav = $('nav');
+function checkWidth() {
+    var windowsize = $window.width();
+    if (windowsize <= 500) {
+        //if the nav is lower than 550px wide then add class min
+        $nav.addClass('min')
+    }
+}
+checkWidth();
+$(window).resize(checkWidth);

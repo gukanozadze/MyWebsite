@@ -54,6 +54,11 @@
     }
     .customer-section{padding-bottom: 50px}
 
+
+    nav.scrolled .main-nav li a{
+        font-size: 105%;
+        padding-bottom: 27px;
+    }
 }
 
 
@@ -102,6 +107,8 @@
     footer .col{width: 50%}
 
     .footer-nav{font-size: 95%}
+
+    nav.scrolled .main-nav li a{padding-bottom: 28px;}
 }
 
 /* Small Phones 0-480px */
@@ -160,14 +167,10 @@
     
 
     /* Minified NAV */
-    nav.scrolled{
-        animation: navScroll 0.5s forwards;
-
-    }
     .main-nav {
         position: absolute;
         width: 50%;
-        top: 0;
+        top: 50px;
         right:0;
         z-index: 100;
         height: 100vh;
@@ -187,7 +190,7 @@
         margin:0;
         opacity: 0;
         justify-content: center;
-        font-size: 120%
+        font-size: 110%
     }
 
     .main-nav li a:link{
@@ -195,34 +198,14 @@
         text-align: center;
     }
 
-
+    nav.scrolled .main-nav li a{border-bottom: none}
     .main-nav.clicked{
-        transform: translateX(0%)
+        transform: translateX(0%);
+        padding-bottom: 100px
     }
 
-    /* Scrolled NAV */
-    .main-nav.scrolled {
-        background: white;
-
-    }
-
-    .main-nav.scrolled li a:link{
-        color: black;
-        text-align: center;
-    }
-
-    .black-logo{
-        height: 60px;
-        margin-top:10px;
-        margin-bottom:10px;
-    }
-    
-    nav.scrolled{
-        background: white;
-        position: fixed;
-        width:100% ;
-        z-index: 999;
-        box-shadow: 0px 0px 2px rgba(0, 0, 0, .2)
+    nav.min.scrolled .main-nav{
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .1);
     }
 
     @keyframes navLinkFade{
@@ -236,14 +219,7 @@
         }
     }
 
-    @keyframes navScroll{
-        from{
-            transform: translateY(-50px)
-        }
-        to{
-            transform: translateY(0px)
-        }
-    }
+    
 }
 
 
