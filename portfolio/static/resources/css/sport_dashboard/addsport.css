@@ -1,0 +1,57 @@
+.main-dashboard{
+}
+
+/* Sport Page inputs */
+input{
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    padding: 9px; 
+    width: 250px;
+}
+
+select{
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    padding: 9px; 
+    width: 250px;
+}
+
+button.file-button, button.add-button{
+
+    border: none;
+    color: white;
+    background-color: #F05328;
+    padding: 10px 75px;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+}
+button.add-button{
+    display: block;
+}
+input, select, button.file-button, button.add-button{
+    margin-right: 2%;
+    margin-top: 20px;
+    width: 300px;
+}
+
+@media screen and (max-width: 1355px){
+    input, select, button.file-button, button.add-button{
+        display: block;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 690px){
+    input, select, button.file-button, button.add-button{
+        width: 95%;
+        margin: 0;
+        margin-top:15px;
+        padding: 10px 10px 10px 10px;
+
+        font-size: 13px;
+
+    }
+    p{
+        font-size: 22px;
+    }
+}

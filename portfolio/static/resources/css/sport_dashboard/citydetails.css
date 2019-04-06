@@ -1,0 +1,269 @@
+body{
+    overflow-x: auto;
+
+}
+
+.main-contents{
+    
+    box-sizing : border-box;
+    display: flex;
+    min-width: 80%;
+    margin: 0px 25px;
+}
+
+/* Main Dashboard Categories (Top Section)*/
+.main-dashboard{
+    box-sizing : border-box;
+    min-width: 100%;
+    background: white;
+    padding-bottom: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+
+/* Select Group (Top) */
+select{
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    padding: 9px; 
+    width: 250px;
+    margin-bottom:30px;
+    margin-top: 10px;
+}
+
+.select-group{
+    margin-top: 35px
+}
+.select-group span{
+    font-size: 25px;
+}
+
+.add-new{
+    cursor: pointer;
+    display: inline;
+    margin-left: 55px;
+    color: #F05328;
+    font-size: 20px;
+}
+.add-new img{
+    
+    margin-right: 5px;
+}
+
+
+/* Holder */
+/* Main dashboard (Main Section)*/
+/* Holder*/
+
+.holder{
+    margin-bottom: 50px;
+    width: 100%;
+    margin-right: 0px;
+}
+
+.holder p{
+    margin-bottom: 0px;
+}
+.holder ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.holder ul li img{
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.main-dashboard-hr{
+    height: 3px;
+    border:none;
+    background-color:rgb(238, 238, 238);
+}
+
+.holder-hr{
+    height: 2px;
+    border:none;
+    background-color:#A8A8A8;
+}
+.main-outer{
+    width: 90%
+}
+
+.inner-dashboard{
+    width: 90%
+}
+@media screen and (max-width: 990px){
+  
+    .holder ul{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        overflow: auto;
+    }
+
+    .holder ul li{
+
+        padding: 0px 15px;
+        padding-left: 0;
+    }
+
+    .city-details.add-new{
+        display: block;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 830px){
+
+    .main-outer{
+        width: 80%
+    }
+    
+    .inner-dashboard{
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 660px){
+
+    .add-new{
+        font-size: 15px;
+    }
+
+    .add-new img{
+        width: 20px;
+    }
+
+    .main-outer{
+        width: 80%
+    }
+    
+    .inner-dashboard{
+        width: 90%
+    }
+}
+
+table{
+    margin: 0 auto;
+    width: 90%;
+    padding-top:20px;
+    border: 1px solid #F05327
+}
+
+th{
+    text-align: center;
+    padding: 5px 2%;
+    
+    font-size: 21px;
+    font-weight: normal;
+    background: #F05327;
+    color:white;
+}
+
+td{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 2%;
+    border: 1px solid #C7C7C7;
+}
+
+.td-sport{
+    max-width: 100px;
+    padding: 15px 15px;
+    text-align: left
+}
+
+button.edit{
+    padding: 1px 25px;
+    min-width: 80px;
+    border: 1px solid #F05327;
+    background: white;
+    color: #F05327;
+}
+
+button.edit.active{
+    background: #F05327;
+    color: white;
+
+}
+
+button.add-button{
+
+    border: none;
+    color: white;
+    background-color: #F05328;
+    padding: 10px 75px;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+}
+
+
+button.edit:hover{
+    border: 1px solid #F05327;
+    background: #F05327;
+    color: white;
+    transition: all 0.2s ease-in
+}
+
+
+.td-categories{
+    font-size: 16px;
+    border:none;
+    border-radius: 15px;
+    padding: 2px 15px;
+    background: #BDBDBD;
+    color:white;
+    margin-bottom: 5px;
+}
+.td-categories img{
+    margin-left: 5px
+}
+
+.small-p{
+    font-size: 13px;
+    color: #F05328
+}
+
+@media screen and (max-width: 1010px){
+    th{
+        overflow: hidden;
+
+    }
+    .td-categories{
+        font-size: 13px;
+        border:none;
+        border-radius: 15px;
+        padding: 2px 9px;
+        background: #BDBDBD;
+        color:white;
+        margin-bottom: 5px;
+    }
+    .td-categories img{
+        margin-left: 4px
+    }
+
+    .main-dashboard-table {
+        min-width: 500px
+    }
+}
+
+@media screen and (max-width: 679px){
+    .add-button{
+
+    }
+    .city-details.add-new{
+        
+        cursor: pointer;
+        display: block;
+        margin-left: 0px;
+        color: #F05328;
+        font-size: 15px;
+    }
+    .city-details.add-new img{
+        
+        margin-right: 5px;
+    }
+}

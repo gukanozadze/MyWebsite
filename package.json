@@ -1,0 +1,15 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass portfolio/static/resources/sass/main.scss portfolio/static/resources/css/style.css -w"
+  },
+  "author": "GUka",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {}
+}

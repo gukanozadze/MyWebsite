@@ -1,0 +1,231 @@
+
+/* Big Tablet to 1200px */
+@media only screen and (max-width: 1200px){
+    .hero-text-box{
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    .row{ padding: 0 2% }
+}
+
+
+/* Small tablet to Big Tablet 768-1023px */
+@media only screen and (max-width: 1023px){
+    body{font-size:17px}
+    section{padding: 60px 0}
+    .long-copy{ width: 80%; margin-left: 10%;}
+
+    .steps-box{ margin-top: 20px; }
+    .works-step{ margin-bottom: 40px; }
+    .works-step:last-of-type{ margin-bottom:  70px; }
+    .app-screen{ width: 50%; }
+    .btn-app img{
+        width: auto;
+        height: 45px;
+        margin-right: 20px;
+    }
+
+
+    .city-feature{ font-size: 100% }
+    .city-feature ion-icon{
+        font-size: 100%;
+        margin-right: 2px;
+    }
+
+
+    .plan-box{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .plan-price{ font-size: 250%; }
+    .plan-price-meal{ font-size: 70%; }
+    .plan-box ul li{ font-size: 80% }
+    .plan-box ul li ion-icon{
+        margin-right: 5px;
+        margin-bottom: -4px;
+        display: inline-block;
+    }
+
+
+    .contact-form{ width: 80%; }
+    .works-step div{
+        margin-right: 25px;
+    }
+    .customer-section{padding-bottom: 50px}
+
+
+    nav.scrolled .main-nav li a{
+        font-size: 105%;
+        padding-bottom: 27px;
+    }
+}
+
+
+/* Small Phones to Tablets 500-768px */
+@media only screen and (max-width: 768px){
+    body{ font-size: 16px; }
+    section{ padding: 30px 0px}
+    .row {padding: 0px 4%}
+    .col {width: 100%}
+
+    .long-copy{ width: 100%; margin-left: 0}
+
+    h1{font-size: 180%}
+    h2{font-size: 150%; padding-left: 2%; padding-right:2% }
+
+    .col{margin-left: 0}
+
+    .works-step{ margin-bottom: 30px; }
+    .works-step:last-of-type{ margin-bottom:  30px; }
+    
+    .works-step div{
+        margin-right: 15px;
+        height: 40px;
+        width: 40px;
+        font-size: 130%;
+        border: 1px solid #e67d22;
+        padding: 7px;
+    }
+    .works-step p{ padding-top: 7px; }
+
+    /* App Image */
+    .steps-box:first-child{ text-align: center; }
+    .steps-box:last-child{ margin-top: 35px; }
+
+    .app-screen{ width: 30%; }
+    /*************/
+
+    .customer-text:first-of-type{margin-top: 0px}
+
+    .customer-box{margin-top: 0px}
+    .customer-image{margin-top: 15px}
+
+    .customer-box ion-icon{display: none}
+    .city-content{ width: 80%; padding-left: 10%; }
+
+    footer .col{width: 50%}
+
+    .footer-nav{font-size: 95%}
+
+    nav.scrolled .main-nav li a{padding-bottom: 28px;}
+}
+
+/* Small Phones 0-480px */
+@media only screen and (max-width: 500px){
+    section{padding: 25px 0}
+
+    form{width: 100%}
+    .customer-section{ padding-bottom: 35px }
+    .contact-form .row{ margin-bottom: 15px }
+    .plan-box{ margin-top: 10px }
+    footer .col:first-of-type{width: 30%}
+    footer .col:last-of-type{width: 70%}
+
+    .footer-nav{font-size: 100%; width: 100%; }
+    .footer-nav li{display: block; margin-right: 0px}
+    .social-links li{margin:4px}
+
+    footer li{ margin-top: 10px }
+    .btn-app img{ height: 35px }
+    
+
+
+    /* Bar Burger Nav*/
+    /* Burger */
+    .burger{
+        cursor: pointer;
+        display: block;
+        margin-top: 30px;
+        margin-right: 10px;
+        float: right;
+    }
+    .burger div{
+        width: 30px;
+        height: 2px;
+        margin: 5px;
+        background-color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    .burger.scrolled div{
+        background: black;
+    }
+
+    .burger.clicked .line1{
+        transform: rotate(-45deg) translate(-5px, 5px)
+    }
+
+    .burger.clicked .line2{
+        opacity: 0;
+    }
+
+    .burger.clicked .line3{
+        transform: rotate(45deg) translate(-5px, -5px)
+    }
+
+    
+
+    /* Minified NAV */
+    .main-nav {
+        position: absolute;
+        width: 50%;
+        top: 50px;
+        right:0;
+        z-index: 100;
+        height: 100vh;
+        background: rgba(0, 0, 0, .2);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 80px;
+        transform: translateX(100%);
+        transition: all 0.5s ease;
+    }
+
+    .main-nav li{
+        display: flex;
+        padding:0;
+        margin:0;
+        opacity: 0;
+        justify-content: center;
+        font-size: 110%
+    }
+
+    .main-nav li a:link{
+        color: white;
+        text-align: center;
+    }
+
+    nav.scrolled .main-nav li a{border-bottom: none}
+    .main-nav.clicked{
+        transform: translateX(0%);
+        padding-bottom: 100px
+    }
+
+    nav.min.scrolled .main-nav{
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .1);
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px)
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px)
+        }
+    }
+
+    
+}
+
+
+
+
+
+
+
+
