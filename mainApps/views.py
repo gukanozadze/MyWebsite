@@ -36,7 +36,7 @@ def chartsAPI(request):
     return render(request, 'mainApps/chartsAPI.html', {'charts': charts})
 
 def projects(request):
-    return render(request, 'mainApps/projects.html', {'title': 'Projects'})
+    return render(request, 'mainApps/index.html', {'title': 'Projects'})
 
 
 # UPWORK 
