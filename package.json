@@ -4,7 +4,7 @@
   "description": "landing page for natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass portfolio/static/resources/sass/main.scss portfolio/static/resources/css/style.css -w"
+    "compile:sass": "node-sass mysite/static/mysite/sass/main.scss mysite/static/mysite/css/style.css -w"
   },
   "author": "GUka",
   "license": "ISC",

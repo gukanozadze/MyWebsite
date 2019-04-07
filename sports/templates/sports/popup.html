@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+
+    <title>Document</title>
+</head>
+
+<style>
+    .popup-container{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 30px;
+        width: 400px;
+        background: white;
+        font-size: 18px;
+    }
+
+    .popup-button{
+        border: none;
+        border: 1px solid #F05327;
+        background: white;
+        padding: 8px 30px;
+        margin: 15px;
+        font-weight: bold;
+        color: #F05327;
+    }
+    .popup-no{
+        background: #F05327;
+        color: white;  
+    }
+
+    .popup-yes:hover{
+        background: #F05327;
+        color: white;  
+        transition: all 0.3s ease;
+    }
+
+    .popup-no:hover{
+        background: white;
+        color: #F05327;  
+        transition: all 0.3s ease;
+
+    }
+</style>
+
+<body style="background: rgb(206, 206, 206)">
+    <div class="popup-container text-center">
+        <p>Are you Sure You Want To Remove This?</p>
+        <button class="popup-yes popup-button">yes</button>
+        <button class="popup-no popup-button">No</button>
+    </div>
+</body>
+</html>

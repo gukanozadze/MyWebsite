@@ -13,31 +13,35 @@
     <title>Guka Nozadze · {{ title }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="{% static 'resources/css/main.css' %}" >
+    <!-- Google Font -->    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'portfolio/css/main.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'portfolio/css/footer.css' %}">
 
 </head>
 
 <body>
-        <nav>
-            <div class="logo align-middle">
-                <h3><a href="{% url 'projects' %}">Guka Nozadze</a></h3>
-            </div>
-            <ul class="nav_links">
-                <li><a href="{% url 'projects' %}">Projects</a></li>
-                <li><a href="{% url 'charts-page' %}">Charts</a></li>
+    <nav>
+        <div class="logo align-middle">
+            <h3><a href="{% url 'home' %}">Guka Nozadze</a></h3>
+        </div>
+        <ul class="nav_links">
+            <li><a href="{% url 'home' %}">Projects</a></li>
+            <li><a href="{% url 'charts-page' %}">Charts</a></li>
 
-                <li><a href="">About</a></li>
-                <li><a href="">Work</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>                
-            </div>
-        </nav>
+            <li><a href="">About</a></li>
+            <li><a href="">Work</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
 
     <main role="main" style="padding-top:8vh">
 
@@ -48,11 +52,45 @@
 
 
 
+    <footer>
+
+        <div class="row">
+            <div class="col-6">
+                <ul class="footer-nav">
+                    <li><a href="http://gukanozadze.com" target=”_blank”>Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="col-6 social-links-box">
+                <ul class="social-links">
+                    <li><a href="https://github.com/gukanozadze" target=”_blank”>
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2019 By Guka Nozadze
+            </p>
+        </div>
+
+    </footer>
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    
-    <script type="text/javascript" src="{% static 'resources/js/main.js' %}"></script>
-
-
+    <script type="text/javascript" src="{% static 'portfolio/js/main.js' %}"></script>
 </body>
 
 </html>

@@ -11,14 +11,7 @@ urlpatterns = [
     path('projects/charts', views.charts, name='charts-page'),
     path('foodpage', views.foodPage, name='food-page'),
 
-    # UPWORK
-    path('addcity', views.addcity, name='addcity'),
-    path('login', views.login, name='login'),
-    path('addsport', views.addsport, name='addsport'),
-    path('addcategory', views.addcategory, name='addcategory'),
-    path('citydetails', views.citydetails, name='citydetails'),
-    path('dashboard', views.Dashboard, name='dashboard'),
-    path('viewall', views.viewall, name='viewall'),
-    path('popup', views.popup, name='popup'),
+
+    
 
 ] 

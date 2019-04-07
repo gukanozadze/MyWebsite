@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'mysite/img/favicon.png' %}">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'mysite/css/icon-font.css' %}">
+    <link rel="stylesheet" href="{% static 'mysite/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/footer.css' %}">
+
+    <title>Guka Nozadze</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="{% static 'mysite/img/favicon-white.png' %}" alt="logo" class="header__logo">
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Guka Nozadze</span>
+                <span class="heading-primary--sub">Front-End Web Developer</span>
+            </h1>
+
+            <a href="#" class="btn btn--white btn--animated">Discover My Projects</a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="section-about">
+            <div class="u-center-text u-mb-8">
+                <h2 class="heading-secondary">
+                    Exciting tours for adventerous people
+                </h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-mb-1">Some text</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam debitis necessitatibus sapiente eos temporibus adipisci voluptatum autem amet, incidunt explicabo fugit sint tempore saepe sunt recusandae voluptatibus a quas!</p>
+                    
+                    <h3 class="heading-tertiary u-mb-1">Some text 2</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam debitis necessitatibus sapiente eos.</p>
+                    
+                    <a href="#" class="button-text">Learn More &rarr;</a>
+                </div>
+
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="https://i.gyazo.com/88fdb5a51dd4197aee2e1c2ae61d928e.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                        <img src="https://i.gyazo.com/30d8b942e930ad60de3df1c2f08c9e71.png" alt="Photo 2" class="composition__photo composition__photo--p2">
+                        <img src="https://i.gyazo.com/9fef8dea3ae4a5dc81bc0653574c5319.png" alt="Photo 3" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="section-features">
+            <div class="row">
+                    <div class="u-center-text">
+                        <h2 class="heading-secondary heading-skills">
+                            My Skills
+                        </h2>
+                    </div>
+                <div class="col-1-of-4 feature">
+            
+                    <i class="icon-basic-world"></i>
+                    <h3>Explore the word</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem debitis odio iure cumquia</p>
+                
+                </div>
+
+                <div class="col-1-of-4 feature">
+                    <i class="icon-basic-compass"></i>
+                    <h3>Meet Nature</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem debitis odio iure cumquia</p>
+                
+                </div>
+
+                <div class="col-1-of-4 feature">
+                    <i class="icon-basic-map"></i>
+                    <h3>Find your way</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem debitis odio iure cumquia</p>
+                </div>
+
+                <div class="col-1-of-4 feature">
+                    <i class="icon-basic-heart"></i>
+                    <h3>Live a healthier life</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem debitis odio iure cumquia</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="section-tours">
+            <div class="u-center-text u-mt-4">
+                <h2 class="heading-secondary u-mb-8">My Projects</h2>
+            </div>
+
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--1 card__side--front">
+                            <div class="card__image card__image--1">
+                            </div>
+
+                            <div class="card__description card__description--1">
+                                <h4>Responsive on all devices</h4>
+                                <h4>Pixel Perfect Landing Page</h4>
+                                <h4>HTML5, CSS3, JavaScript</h4>
+                            </div>
+                            <div class="card__name card__name--1">
+                                    Restaurant Page
+                                </div>
+                        </div>
+                        
+
+                        <div class="card__side card__side--back card__side--back-1">
+                            <a href="{% url 'food-page' %}" class="btn btn--white">Open</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--2 card__side--front">
+
+                            <div class="card__image card__image--2">
+                            </div>
+                    
+                            <div class="card__description card__description--2">
+                                <h4>Used Echarts Liblary</h4>
+                                <h4>Bar Chart is Made For Upwork Client</h4>
+                                <h4>HTML5, CSS3, JavaScript, Django</h4>
+                            </div>
+
+                            <div class="card__name card__name--2">
+                                Dynamic Charts
+                            </div>
+
+                        </div>
+                    
+                        
+                        <div class="card__side card__side--back card__side--back-2">
+                                <a href="{% url 'charts-page' %}" class="btn btn--white">Open</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--3 card__side--front">
+                    
+                            <div class="card__image card__image--3">
+                            </div>
+                    
+                            <div class="card__description card__description--3">
+                                <h4>Active Since March</h4>
+
+                                <h4>Completed 7 Jobs</h4>
+                                <h4>100% Success Rate</h4>
+                            </div>
+                    
+                            <div class="card__name card__name--3">
+                                UpWork Profile
+                            </div>
+                    
+                        </div>
+
+                    
+                    
+                        <div class="card__side card__side--back card__side--back-3">
+                            <a href="https://www.upwork.com/freelancers/~0166e1cfbe516903b1" class="btn btn--white">Open Profile</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="{% static 'mysite/img/video.mp4' %}" type="video/mp4">
+                    <source src="{% static 'mysite/img/video.webm' %}" type="video/webm">
+                    Browser not supported
+                </video>
+            </div>
+
+            <div class="u-center-text">
+                <h2 class="heading-secondary u-mb-8">About Me</h2>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img class="story__image" src="{% static 'mysite/img/nat-7.jpg' %}">
+
+                        <figcaption class="story__caption">
+                            Guka Nozadze
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary"> I had the best week with my family</h3>
+
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem deleniti omnis itaque nesciunt cumQuidem deleniti omnis itaque nesciunt cum. 
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem deleniti omnis itaque nesciunt cumQuidem deleniti omnis itaque nesciunt cum. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+          
+            <div class="row">
+                <div class="col-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="http://gukanozadze.com" target=”_blank”>Home</a></li>
+                        <li><a href="#section-stories">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+    
+                    </ul>
+                </div>
+                <div class="col-1-of-2 social-links-box">
+                    <ul class="social-links">
+                        <li><a href="https://github.com/gukanozadze" target=”_blank”>
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a></li>
+                        <li><a href="https://facebook.com/gukanozadze">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></li>
+                        <li><a href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a></li>
+                        <li><a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2019 By Guka Nozadze
+                </p>
+            </div>
+    
+        </footer>
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    </body>
+</html>
