@@ -2,15 +2,21 @@
 <html lang="en">
     {% load static %}
     <head>
+
+        <!-- Title Icon -->
+        <link rel="shortcut icon" type="image/png" href="{% static 'restaurant/img/logo.png' %}"> 
+
+        <!-- Vendors -->
         <link rel="stylesheet" type="text/css" href="{% static 'restaurant/css/normalize.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'restaurant/css/grid.css' %}">
         
         <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400" >
 
-
+        <!-- My Files -->
         <link rel="stylesheet" type="text/css" href="{% static 'restaurant/css/foodpage.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'restaurant/css/queries.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/footer.css' %}">
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -365,7 +371,7 @@
 
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="message">Drop us a line</label>
+                            <label for="message">Message</label>
                         </div>
                         <div class="col span-2-of-3">
                             <textarea name="message" id="message" placeholder="Your Message"></textarea>
@@ -383,31 +389,7 @@
             </div>
         </section>
 
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="http://gukanozadze.com"  target=”_blank”>Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#contact">Contact</a></li>
-
-                    </ul>
-                </div>
-                <div class="col span-1-of-2 social-links-box">
-                    <ul class="social-links">
-                        <li><a href="https://github.com/gukanozadze"  target=”_blank”><ion-icon name="logo-github"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#" ><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2019 By Guka Nozadze
-                </p>
-            </div>
-        </footer>
+        {% include "footer.html" %}
         
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 

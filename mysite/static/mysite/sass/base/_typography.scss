@@ -4,6 +4,7 @@ body {
     font-weight: 400;
     line-height: 1.7;
     padding: 3rem;
+    padding-bottom: 0rem;
 
     color: $color-grey-dark;
 }
@@ -54,17 +55,21 @@ body {
         transform: skewY(-4deg) skewX(-10deg) scale(1.1);
         text-shadow: .5rem, 1rem, 10rem rgba($color-black, 0.8)
     }
+
+    &--skills{
+    background-image: linear-gradient(to right bottom, $color-white, $color-grey-light-1);
+
+    }
 }
 
 .heading-tertiary{
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
-
 }
 
 p.paragraph{
-    font-size: $default-font-size;
+    font-size: 1.6rem;
 
     &:not(:last-child){
         margin-bottom: 3.5rem; 

@@ -6,18 +6,19 @@ body{
 }
 
 /* Scrollbar */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     width: .5em;
 }
  
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 10px rgba(34, 34, 34, 0.3);
+
 }
  
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
-}
+} */
 
 nav{
     z-index:1;
@@ -78,6 +79,9 @@ ul.nav_links li{
 
 
 @media screen and (max-width:668px){
+    nav{
+        min-height: 9vh;    
+    }
     body{
         overflow-x: hidden
     }

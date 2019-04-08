@@ -10,6 +10,8 @@
     transform: skewX(-12deg);
     position: relative;
 
+    
+
     &__shape{
         width: 15rem;
         height: 15rem;
@@ -26,8 +28,9 @@
 
     &__image{
         height: 100%;
-        transform: translateX(-4rem) scale(1.3);
-        transition: all .5s ease;
+        transform: translateX(-.7rem) scale(1.2);
+        transition: all .4s ease;
+        backface-visibility: hidden
     }
 
     &__text{
@@ -45,7 +48,7 @@
         font-size: 1.7rem;
         text-align: center;
         backface-visibility: hidden;
-        transition: all .4s ease;
+        transition: all .8s;
         opacity: 0;
     }
 
@@ -57,7 +60,7 @@
     }
 
     &:hover &__image{
-        transform: translateX(-4rem) scale(1);
-        filter: blur(4px) brightness(70%);
+        transform: translateX(-.7rem) scale(1);
+        filter: blur(2px) brightness(80%);
     }
 }

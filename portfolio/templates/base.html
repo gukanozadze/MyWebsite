@@ -12,20 +12,26 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Guka Nozadze · {{ title }}</title>
 
+    <!-- Title Icon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'charts/img/bar-chart-icon.png' %}">
+
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     
     <!-- Google Font -->    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
+    <!-- Ionicons -->    
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css">
+
+    <!-- My Files -->    
     <link rel="stylesheet" href="{% static 'portfolio/css/main.css' %}">
-    
     <link rel="stylesheet" href="{% static 'portfolio/css/footer.css' %}">
 
 </head>
 
 <body>
-    <nav>
+    <nav class="red-nav">
         <div class="logo align-middle">
             <h3><a href="{% url 'home' %}">Guka Nozadze</a></h3>
         </div>
@@ -52,43 +58,10 @@
 
 
 
-    <footer>
-
-        <div class="row">
-            <div class="col-6">
-                <ul class="footer-nav">
-                    <li><a href="http://gukanozadze.com" target=”_blank”>Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-
-                </ul>
-            </div>
-            <div class="col-6 social-links-box">
-                <ul class="social-links">
-                    <li><a href="https://github.com/gukanozadze" target=”_blank”>
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <p>
-                Copyright &copy; 2019 By Guka Nozadze
-            </p>
-        </div>
-
-    </footer>
+    {% include "footer.html" %}
 
 
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="{% static 'portfolio/js/main.js' %}"></script>
 </body>

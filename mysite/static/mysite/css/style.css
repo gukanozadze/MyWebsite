@@ -46,6 +46,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   padding: 3rem;
+  padding-bottom: 0rem;
   color: #777; }
 
 .heading-primary {
@@ -86,6 +87,8 @@ body {
   .heading-secondary:hover {
     transform: skewY(-4deg) skewX(-10deg) scale(1.1);
     text-shadow: 0.5rem, 1rem, 10rem rgba(0, 0, 0, 0.8); }
+  .heading-secondary--skills {
+    background-image: linear-gradient(to right bottom, #fff, #f4f4f4); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -103,6 +106,12 @@ p.paragraph {
 .u-mb-8 {
   margin-bottom: 8rem; }
 
+.u-mb-4 {
+  margin-bottom: 4rem; }
+
+.u-mb-2 {
+  margin-bottom: 2rem; }
+
 .u-mb-1 {
   margin-bottom: 1rem; }
 
@@ -112,15 +121,24 @@ p.paragraph {
 .u-mt-4 {
   margin-top: 4rem; }
 
+.u-mt-2 {
+  margin-top: 2rem; }
+
+.u-pt-4 {
+  padding-top: 4rem; }
+
+.u-pt-20 {
+  padding-top: 20rem; }
+
 .bg-video {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -10;
-  opacity: .15;
-  overflow: hidden; }
+  overflow: hidden;
+  filter: opacity(0.2);
+  z-index: -22; }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -234,7 +252,7 @@ p.paragraph {
     width: 100%;
     backface-visibility: hidden;
     overflow: hidden;
-    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 3rem rgba(0, 0, 0, 0.4);
     border-radius: 5px; }
     .card__side--front {
       background-color: #fff; }
@@ -285,7 +303,7 @@ p.paragraph {
       margin: 0 auto;
       padding: 1rem 0rem; }
       .card__description h4:not(:last-child) {
-        border-bottom: 2px solid #eeeeee; }
+        border-bottom: 2px solid #e9e9e9; }
   .card__name {
     font-size: 2.8rem;
     font-weight: 300;
@@ -303,22 +321,24 @@ p.paragraph {
     .card__name--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.9), rgba(86, 67, 250, 0.9)); }
 
-.feature {
+.skill {
   background: white;
   box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.3);
   text-align: center;
   padding: 2rem 2rem;
   transition: all .4s ease; }
-  .feature i {
+  .skill i {
     font-size: 6rem;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
-    color: transparent; }
-  .feature h3 {
+    color: transparent;
+    padding: 2rem 0;
+    display: inline-block; }
+  .skill h3 {
     font-size: 1.6rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem; }
-  .feature:hover {
+  .skill:hover {
     transform: translateY(-1rem);
     box-shadow: 0px 0.3rem 2.2rem rgba(0, 0, 0, 0.5); }
 
@@ -344,8 +364,9 @@ p.paragraph {
     transform: translateX(-3rem) skewX(12deg); }
   .story__image {
     height: 100%;
-    transform: translateX(-4rem) scale(1.3);
-    transition: all .5s ease; }
+    transform: translateX(-0.7rem) scale(1.2);
+    transition: all .4s ease;
+    backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
@@ -359,15 +380,15 @@ p.paragraph {
     font-size: 1.7rem;
     text-align: center;
     backface-visibility: hidden;
-    transition: all .4s ease;
+    transition: all .8s;
     opacity: 0; }
   .story:hover .story__caption {
     transform: translate(-50%, -50%);
     opacity: 1;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
   .story:hover .story__image {
-    transform: translateX(-4rem) scale(1);
-    filter: blur(4px) brightness(70%); }
+    transform: translateX(-0.7rem) scale(1);
+    filter: blur(2px) brightness(80%); }
 
 /* *********************************/
 /* HEADER***************************/
@@ -378,7 +399,8 @@ p.paragraph {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/laptop-hero.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0 100%);
+  z-index: 1; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -419,24 +441,28 @@ p.paragraph {
     width: calc(3 * ((100% - 3 * 60px) / 4) + 2*60px); }
 
 .section-about {
-  background-color: #f7f7f7;
-  padding: 28rem 0;
-  margin-top: -20vh; }
+  background-color: #f4f4f4;
+  padding: 35rem 0;
+  margin-top: -25vh; }
 
-.section-features {
+.section-skills {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../img/nat-4.jpg");
   background-size: cover;
-  padding: 20rem 0;
+  padding: 0rem 0 25rem 0;
   margin-top: -10rem;
   transform: skewY(-6deg); }
-  .section-features > * {
+  .section-skills > * {
     transform: skewY(6deg); }
 
-.section-tours {
-  background-color: #f7f7f7;
+.section-projects {
+  background-color: #f4f4f4;
   padding: 30rem 0 20rem 0;
   margin-top: -20vh; }
 
 .section-stories {
   position: relative;
-  padding: 15rem 0; }
+  padding: 25rem 0;
+  padding-bottom: 45rem;
+  margin-top: -20vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  background-color: #f4f4f4; }

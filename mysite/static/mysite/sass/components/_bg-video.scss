@@ -4,10 +4,10 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: -10;
-    opacity: .15;
     overflow: hidden;
-
+    filter: opacity(.2);
+    z-index: -22;
+    
     &__content{
         height: 100%;
         width: 100%;

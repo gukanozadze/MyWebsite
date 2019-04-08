@@ -10,9 +10,8 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'mysite/img/favicon.png' %}">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="{% static 'mysite/css/icon-font.css' %}">
+    <link rel="stylesheet" href="{% static 'mysite/css/icofont.min.css' %}">
     <link rel="stylesheet" href="{% static 'mysite/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'portfolio/css/footer.css' %}">
 
@@ -30,29 +29,62 @@
                 <span class="heading-primary--sub">Front-End Web Developer</span>
             </h1>
 
-            <a href="#" class="btn btn--white btn--animated">Discover My Projects</a>
+            <a href="#section-stories" class="btn btn--white btn--animated">Discover Me</a>
         </div>
     </header>
 
     <main>
+        <div class="section-stories" id="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="{% static 'mysite/img/video.mp4' %}" type="video/mp4">
+                    <source src="{% static 'mysite/img/video.webm' %}" type="video/webm">
+                    Browser not supported
+                </video>
+            </div>
 
+            <div class="u-center-text">
+                <h2 class="heading-secondary u-mb-8">About Me</h2>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img class="story__image" src="{% static 'mysite/img/profile.png' %}">
+
+                        <figcaption class="story__caption">
+                            Guka Nozadze
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary">I'm self-taught Developer</h3>
+
+                        <p>
+                            My name is Guka Nozadze and currently I am self employed as a full stack web developer.  
+                            For the past several months I have been working as a freelancer at Upwork. 
+                            I have a diverse set of skills ranging from design to coding (for further information please continiue scrolling my front page)
+                            <!-- for business purposes please reach me out at: gukanozadze@gmail.com</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="section-about">
             <div class="u-center-text u-mb-8">
                 <h2 class="heading-secondary">
-                    Exciting tours for adventerous people
+                    About my projects
                 </h2>
             </div>
 
             <div class="row">
 
                 <div class="col-1-of-2">
-                    <h3 class="heading-tertiary u-mb-1">Some text</h3>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam debitis necessitatibus sapiente eos temporibus adipisci voluptatum autem amet, incidunt explicabo fugit sint tempore saepe sunt recusandae voluptatibus a quas!</p>
+                    <h3 class="heading-tertiary u-mb-1">Main page</h3>
+                    <p class="paragraph">This page is written in HTML, CSS(SASS) and JavaScript (Jquery only for scrool animation). I'm using SASS because it's has more posibilities than just CSS. </p>
                     
-                    <h3 class="heading-tertiary u-mb-1">Some text 2</h3>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam debitis necessitatibus sapiente eos.</p>
+                    <h3 class="heading-tertiary u-mb-1">Other pages</h3>
+                    <p class="paragraph">For charts page I'm using Echarts liblary to create dynamic charts and Django to upload data on database. No JavaScript is used on restaurant page. </p>
                     
-                    <a href="#" class="button-text">Learn More &rarr;</a>
+                    <a href="#section-skills" class="button-text">Learn More &rarr;</a>
                 </div>
 
                 <div class="col-1-of-2">
@@ -66,46 +98,49 @@
             
         </div>
 
-        <div class="section-features">
+        <div class="section-skills">
             <div class="row">
-                    <div class="u-center-text">
-                        <h2 class="heading-secondary heading-skills">
+                    <div class="u-center-text u-mb-4 u-pt-20"  id="section-skills">
+                        <h2 class="heading-secondary heading-secondary--skills">
                             My Skills
                         </h2>
                     </div>
-                <div class="col-1-of-4 feature">
+                <div class="col-1-of-4 skill">
             
-                    <i class="icon-basic-world"></i>
-                    <h3>Explore the word</h3>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem debitis odio iure cumquia</p>
+                    <i class="icofont-code-alt"></i>
+                    <h3>HTML, CSS (SASS)</h3>
+                    <p class="paragraph">
+                        I've been learing html and css for 3 years. 
+                        Year ago I started using bootstrap and recently got comfortable with SASS
+                    </p>
                 
                 </div>
 
-                <div class="col-1-of-4 feature">
-                    <i class="icon-basic-compass"></i>
-                    <h3>Meet Nature</h3>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem debitis odio iure cumquia</p>
+                <div class="col-1-of-4 skill">
+                    <i class="icofont-file-javascript"></i>
+                    <h3>JavaScript</h3>
+                    <p class="paragraph">I've used Jquery, AJAX in practice. Have basic knowledge of NPM. Used Google's Geocoding API and couple of JS liblaries.</p>
                 
                 </div>
 
-                <div class="col-1-of-4 feature">
-                    <i class="icon-basic-map"></i>
-                    <h3>Find your way</h3>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem debitis odio iure cumquia</p>
+                <div class="col-1-of-4 skill">
+                    <i class="icofont-file-python"></i>
+                    <h3>Python, Django</h3>
+                    <p class="paragraph">Python's powerfull framework Django let's me create mini-social network with login/register system and complex databases.  </p>
                 </div>
 
-                <div class="col-1-of-4 feature">
-                    <i class="icon-basic-heart"></i>
-                    <h3>Live a healthier life</h3>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem debitis odio iure cumquia</p>
+                <div class="col-1-of-4 skill">
+                        <i class="icofont-infinite"></i>
+                    <h3>More</h3>
+                    <p class="paragraph">My additional skills include Git, Google Firebase, Adobe Photoshop, Adobe XD and Basic Android App Development </p>
                 </div>
             </div>
             
         </div>
 
-        <div class="section-tours">
+        <div class="section-projects">
             <div class="u-center-text u-mt-4">
-                <h2 class="heading-secondary u-mb-8">My Projects</h2>
+                <h2 class="heading-secondary u-mb-8"  id="section-projects">My Projects</h2>
             </div>
 
 
@@ -117,8 +152,8 @@
                             </div>
 
                             <div class="card__description card__description--1">
-                                <h4>Responsive on all devices</h4>
                                 <h4>Pixel Perfect Landing Page</h4>
+                                <h4>Responsive for all devices</h4>
                                 <h4>HTML5, CSS3, JavaScript</h4>
                             </div>
                             <div class="card__name card__name--1">
@@ -140,7 +175,7 @@
                             </div>
                     
                             <div class="card__description card__description--2">
-                                <h4>Used Echarts Liblary</h4>
+                                <h4>Used EchartsJS Liblary</h4>
                                 <h4>Bar Chart is Made For Upwork Client</h4>
                                 <h4>HTML5, CSS3, JavaScript, Django</h4>
                             </div>
@@ -189,39 +224,7 @@
             </div>
         </div>
 
-        <div class="section-stories">
-            <div class="bg-video">
-                <video class="bg-video__content" autoplay muted loop>
-                    <source src="{% static 'mysite/img/video.mp4' %}" type="video/mp4">
-                    <source src="{% static 'mysite/img/video.webm' %}" type="video/webm">
-                    Browser not supported
-                </video>
-            </div>
-
-            <div class="u-center-text">
-                <h2 class="heading-secondary u-mb-8">About Me</h2>
-            </div>
-
-            <div class="row">
-                <div class="story">
-                    <figure class="story__shape">
-                        <img class="story__image" src="{% static 'mysite/img/nat-7.jpg' %}">
-
-                        <figcaption class="story__caption">
-                            Guka Nozadze
-                        </figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary"> I had the best week with my family</h3>
-
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem deleniti omnis itaque nesciunt cumQuidem deleniti omnis itaque nesciunt cum. 
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem deleniti omnis itaque nesciunt cumQuidem deleniti omnis itaque nesciunt cum. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </main>
 
 
@@ -245,12 +248,7 @@
                         <li><a href="https://facebook.com/gukanozadze">
                                 <ion-icon name="logo-facebook"></ion-icon>
                             </a></li>
-                        <li><a href="#">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a></li>
-                        <li><a href="#">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a></li>
+
                     </ul>
                 </div>
             </div>
@@ -262,5 +260,7 @@
     
         </footer>
         <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="{% static 'portfolio/js/main.js' %}"></script>
     </body>
 </html>
