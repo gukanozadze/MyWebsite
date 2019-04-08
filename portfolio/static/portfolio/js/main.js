@@ -1,7 +1,7 @@
 $("a[href^='#'").on('click', function(e){
     e.preventDefault()
-
     var target = this.hash
+
     var $target = $(target)
 
     $('html, body').animate({
@@ -42,6 +42,8 @@ const hoverProject = function(){
     window.location.replace(link);
 }
 $('.project').click(hoverProject)
+
+
 
 
 

@@ -18,6 +18,9 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+body{
+    position: relative;
+}
 /* ********************************************* */
 /* REUSABLE COMPONENTS */
 /* ********************************************* */
@@ -156,6 +159,7 @@ header{
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+    position: relative;
 }
 
 .hero-text-box{
@@ -494,42 +498,3 @@ input[type=checkbox]{
 
 
 
-
-/* ****************************************************/
-/* FOOTER ***************************************/
-/* ****************************************************/
-footer{
-    padding: 40px 0px;
-    padding-bottom: 80px;
-
-    background: #272727
-}
-
-footer ul{
-    list-style: none;
-}
-
-footer ul li{
-    display: inline-block;
-    margin-right:20px;
-
-}
-footer ul li:last-of-type{
-    margin-right:0px;
-
-}
-
-footer ul li a{
-    text-decoration: none;
-    color: #e67d22
-}
-.social-links-box{
-    text-align: right
-}
-
-footer p{
-    margin-top: 40px;
-    color: #e67d22;
-    font-weight: 400;
-    text-align: center
-}

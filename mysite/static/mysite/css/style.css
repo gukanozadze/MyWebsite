@@ -11,6 +11,17 @@
 html {
   font-size: 62.5%; }
 
+body {
+  font-family: 'Lato', sans-serif;
+  /*font-size: 1.6rem;*/
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem;
+  padding-bottom: 0rem;
+  color: #777;
+  position: relative;
+  overflow-x: hidden; }
+
 /* ANIMATIONS */
 @keyframes moveInLeft {
   0% {
@@ -39,15 +50,6 @@ html {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-
-body {
-  font-family: 'Lato', sans-serif;
-  /*font-size: 1.6rem;*/
-  font-weight: 400;
-  line-height: 1.7;
-  padding: 3rem;
-  padding-bottom: 0rem;
-  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -446,7 +448,7 @@ p.paragraph {
   margin-top: -25vh; }
 
 .section-skills {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../img/nat-4.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
   background-size: cover;
   padding: 0rem 0 25rem 0;
   margin-top: -10rem;

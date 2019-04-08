@@ -26,7 +26,7 @@
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">Guka Nozadze</span>
-                <span class="heading-primary--sub">Front-End Web Developer</span>
+                <span class="heading-primary--sub">Full-Stack Web Developer</span>
             </h1>
 
             <a href="#section-stories" class="btn btn--white btn--animated">Discover Me</a>
@@ -79,7 +79,7 @@
 
                 <div class="col-1-of-2">
                     <h3 class="heading-tertiary u-mb-1">Main page</h3>
-                    <p class="paragraph">This page is written in HTML, CSS(SASS) and JavaScript (Jquery only for scrool animation). I'm using SASS because it's has more posibilities than just CSS. </p>
+                    <p class="paragraph">This page is written in HTML, CSS(SASS) and JavaScript (Jquery only for scrool animation). I'm using SASS because it has more posibilities than just CSS. </p>
                     
                     <h3 class="heading-tertiary u-mb-1">Other pages</h3>
                     <p class="paragraph">For charts page I'm using Echarts liblary to create dynamic charts and Django to upload data on database. No JavaScript is used on restaurant page. </p>
@@ -163,7 +163,7 @@
                         
 
                         <div class="card__side card__side--back card__side--back-1">
-                            <a href="{% url 'food-page' %}" class="btn btn--white">Open</a>
+                            <a href="{% url 'food-page' %}" target="_blank" class="btn btn--white">Open</a>
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
                     
                         
                         <div class="card__side card__side--back card__side--back-2">
-                                <a href="{% url 'charts-page' %}" class="btn btn--white">Open</a>
+                                <a href="{% url 'charts-page' %}" target="_blank" class="btn btn--white">Open</a>
                         </div>
                         
                     </div>
@@ -216,7 +216,7 @@
                     
                     
                         <div class="card__side card__side--back card__side--back-3">
-                            <a href="https://www.upwork.com/freelancers/~0166e1cfbe516903b1" class="btn btn--white">Open Profile</a>
+                            <a href="https://www.upwork.com/freelancers/~0166e1cfbe516903b1" target="_blank" class="btn btn--white">Open Profile</a>
                         </div>
                         
                     </div>
@@ -229,38 +229,11 @@
 
 
 
-    <footer>
-          
-            <div class="row">
-                <div class="col-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="http://gukanozadze.com" target=”_blank”>Home</a></li>
-                        <li><a href="#section-stories">About Me</a></li>
-                        <li><a href="#contact">Contact</a></li>
-    
-                    </ul>
-                </div>
-                <div class="col-1-of-2 social-links-box">
-                    <ul class="social-links">
-                        <li><a href="https://github.com/gukanozadze" target=”_blank”>
-                                <ion-icon name="logo-github"></ion-icon>
-                            </a></li>
-                        <li><a href="https://facebook.com/gukanozadze">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a></li>
+    {% include 'footer.html' %}
 
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2019 By Guka Nozadze
-                </p>
-            </div>
-    
-        </footer>
         <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="{% static 'portfolio/js/footer.js' %}"></script>
         <script type="text/javascript" src="{% static 'portfolio/js/main.js' %}"></script>
     </body>
 </html>
