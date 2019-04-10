@@ -1,3 +1,5 @@
+{% load static %}
+
 <footer>
     <div class="container">
 
@@ -12,13 +14,11 @@
             </div>
             <div class="col-6 col span-1-of-2 col-1-of-2 social-links-box">
                 <ul class="social-links">
-                    <li><a href="https://github.com/gukanozadze" target=”_blank”>
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a></li>
-                    <li><a href="https://facebook.com/gukanozadze" target=”_blank”>
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a></li>
-
+                        <li> <a href="https://github.com/gukanozadze" target=”_blank”> <ion-icon name="logo-github"></ion-icon> </a> </li>
+                        <li> <a href="https://www.upwork.com/freelancers/~0166e1cfbe516903b1" target=”_blank”> 
+                        
+                        <img src="{% static 'portfolio/img/upwork-logo.png' %}"/>
+                    </a> </li>
                 </ul>
             </div>
         </div>
