@@ -133,7 +133,10 @@ USE_TZ = True
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'portfolio/static'),
-
+    os.path.join(BASE_DIR, 'charts/static'),
+    os.path.join(BASE_DIR, 'mainApps/static'),
+    os.path.join(BASE_DIR, 'mysite/static'),
+    os.path.join(BASE_DIR, 'sports/static'),
 ]
 STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
