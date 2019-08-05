@@ -61,6 +61,6 @@
 
     &:hover &__image{
         transform: translateX(-.7rem) scale(1);
-        filter: blur(2px) brightness(80%);
+        filter: brightness(80%);
     }
 }

@@ -368,7 +368,7 @@ p.paragraph {
     height: 100%;
     transform: translateX(-0.7rem) scale(1.2);
     transition: all .4s ease;
-    backface-visibility: hidden; }
+    backface-visibility: hidden !important; }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
@@ -390,7 +390,7 @@ p.paragraph {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
   .story:hover .story__image {
     transform: translateX(-0.7rem) scale(1);
-    filter: blur(2px) brightness(80%); }
+    filter: brightness(70%); }
 
 /* *********************************/
 /* HEADER***************************/

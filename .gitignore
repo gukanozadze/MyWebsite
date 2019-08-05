@@ -11,4 +11,5 @@ db.sqlite3
 /media
 /static/
 /myvenv
+/ENV_DIR
 node_modules
