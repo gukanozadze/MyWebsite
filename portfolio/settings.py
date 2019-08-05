@@ -32,7 +32,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #  Apps
-    'mainApps.apps.MainappsConfig',
     'restaurant.apps.RestaurantConfig',
     'charts.apps.ChartsConfig',
     'sports.apps.SportsConfig',
