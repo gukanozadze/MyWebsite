@@ -10,7 +10,7 @@
     &--main{
         display: block;
         font-size: 6rem;
-        letter-spacing: 3.5rem;
+        letter-spacing:  2.5rem;
         animation: moveInLeft 1s ease-out;
     
         /*
@@ -25,7 +25,7 @@
     &--sub{
         display: block;
         font-size: 2rem;
-        letter-spacing: 1.71rem;  
+        letter-spacing: 1.3rem;  
         animation: moveInRight 1s ease-out;
     }
 }

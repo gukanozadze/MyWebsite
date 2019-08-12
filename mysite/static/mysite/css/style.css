@@ -61,7 +61,7 @@ body {
   .heading-primary--main {
     display: block;
     font-size: 6rem;
-    letter-spacing: 3.5rem;
+    letter-spacing: 2.5rem;
     animation: moveInLeft 1s ease-out;
     /*
         animation-name: moveInRight;
@@ -73,7 +73,7 @@ body {
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
-    letter-spacing: 1.71rem;
+    letter-spacing: 1.3rem;
     animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
@@ -139,7 +139,7 @@ p.paragraph {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  filter: opacity(0.2);
+  filter: opacity(0.18);
   z-index: -22; }
   .bg-video__content {
     height: 100%;
@@ -348,11 +348,10 @@ p.paragraph {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.76);
   border-radius: 5px;
-  padding: 6rem;
-  padding-left: 9rem;
-  font-size: 1.6rem;
+  padding: 5rem;
+  font-size: 1.7rem;
   transform: skewX(-12deg);
   position: relative; }
   .story__shape {
@@ -368,7 +367,7 @@ p.paragraph {
     height: 100%;
     transform: translateX(-0.7rem) scale(1.2);
     transition: all .4s ease;
-    backface-visibility: hidden !important; }
+    backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
@@ -384,13 +383,6 @@ p.paragraph {
     backface-visibility: hidden;
     transition: all .8s;
     opacity: 0; }
-  .story:hover .story__caption {
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
-  .story:hover .story__image {
-    transform: translateX(-0.7rem) scale(1);
-    filter: brightness(70%); }
 
 /* *********************************/
 /* HEADER***************************/
@@ -444,22 +436,21 @@ p.paragraph {
 
 .section-about {
   background-color: #f4f4f4;
-  padding: 35rem 0;
-  margin-top: -25vh; }
+  padding: 20rem 0;
+  margin-top: -30vh; }
 
 .section-skills {
+  margin-top: -25vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
   background-size: cover;
-  padding: 0rem 0 25rem 0;
-  margin-top: -10rem;
-  transform: skewY(-6deg); }
-  .section-skills > * {
-    transform: skewY(6deg); }
+  padding: 5rem 0 25rem 0;
+  opacity: 1;
+  clip-path: polygon(0 25vh, 100% 0, 100% 80vh, 0 100%); }
 
 .section-projects {
   background-color: #f4f4f4;
   padding: 30rem 0 20rem 0;
-  margin-top: -20vh; }
+  margin-top: -40vh; }
 
 .section-stories {
   position: relative;

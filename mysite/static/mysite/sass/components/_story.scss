@@ -2,11 +2,10 @@
     width: 75%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba(0,0,0,.2);
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.76);
     border-radius: 5px;
-    padding: 6rem;
-    padding-left: 9rem;
-    font-size: $default_font_size;
+    padding: 5rem;
+    font-size: $big_font_size;
     transform: skewX(-12deg);
     position: relative;
 
@@ -52,15 +51,4 @@
         opacity: 0;
     }
 
-
-    &:hover &__caption{
-        transform: translate(-50%, -50%);
-        opacity: 1;
-        text-shadow: 0px 0px 5px rgba(0,0,0,.2)
-    }
-
-    &:hover &__image{
-        transform: translateX(-.7rem) scale(1);
-        filter: brightness(80%);
-    }
 }
