@@ -1,12 +1,19 @@
 .row{
     max-width: $grid-width;
     margin: 0 auto;
-
-    &:not(:last-child){
+    &:not(:last-child){ 
         margin-bottom: $gutter-vertical;
     }
-
     @include clearFix;
+
+
+    @include respond(tablet_port){
+        max-width: 60rem;
+    }
+
+    @include respond(phone){
+        padding: 0 3.5rem;
+    }
 
 
     [class^="col-"]{
@@ -15,7 +22,18 @@
 
         &:not(:last-child){
             margin-right: $gutter-horizontal;
+
+            @include respond(tablet_port){
+                margin-right: 0;
+                margin-bottom: 6rem;
+            }
         }
+
+        @include respond(tablet_port){
+            width: 100% !important;
+        }
+
+        
     }
 
     .col-1-of-2{

@@ -1,50 +1,60 @@
 {% load static %}
 
 <footer>
-    <div class="container">
+    <div>
+        <ul class="footer-nav">
+            <li><a href="http://gukanozadze.com" target=”_blank”>Home</a></li>
+            <li><a href="http://gukanozadze.com/#section-stories" target=”_blank”>About Me</a></li>
+            <li>
+                <div id="footer-contact">Contact</div>
+            </li>
 
-        <div class="row">
-            <div class="col-6 col span-1-of-2 col-1-of-2">
-                <ul class="footer-nav">
-                    <li><a href="http://gukanozadze.com" target=”_blank”>Home</a></li>
-                    <li><a href="http://gukanozadze.com/#section-stories" target=”_blank”>About Me</a></li>
-                    <li><div id="footer-contact" >Contact</div></li>
+        </ul>
+        <ul class="social-links">
+            <li> <a href="https://github.com/gukanozadze" target=”_blank”>
+                    <ion-icon name="logo-github"></ion-icon>
+                </a> 
+            </li>
+            <li> <a href="https://www.linkedin.com/in/guka-nozadze-633973180/" target=”_blank”>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a> 
+            </li>
+            <li> <a title="My Resume" href="{% static 'portfolio/cv.pdf' %}" target=”_blank”>
+                    <ion-icon name="document"></ion-icon>
+                </a> 
+            </li>
+            <li> <a href="https://www.upwork.com/freelancers/~0166e1cfbe516903b1" target=”_blank”>
 
-                </ul>
-            </div>
-            <div class="col-6 col span-1-of-2 col-1-of-2 social-links-box">
-                <ul class="social-links">
-                        <li> <a href="https://github.com/gukanozadze" target=”_blank”> <ion-icon name="logo-github"></ion-icon> </a> </li>
-                        <li> <a href="https://www.linkedin.com/in/guka-nozadze-633973180/" target=”_blank”> <ion-icon name="logo-linkedin"></ion-icon> </a> </li>
-                        <li> <a title="My Resume" href="{% static 'portfolio/cv.pdf' %}" target=”_blank”> <ion-icon name="document"></ion-icon> </a> </li>
-                        <li> <a href="https://www.upwork.com/freelancers/~0166e1cfbe516903b1" target=”_blank”> 
-                        
-                        <img src="{% static 'portfolio/img/upwork-logo.png' %}"/>
-                    </a> </li>
-                </ul>
-            </div>
-        </div>
-
-            <div class="container">
-                <p>
-                    Copyright &copy; 2019 By Guka Nozadze
-                </p>
-            </div>
-
+                    <img src="{% static 'portfolio/img/upwork-logo.png' %}" />
+                </a> 
+            </li>
+        </ul>
     </div>
+
+        <p class="copyright">
+            Copyright &copy; 2019 By Guka Nozadze
+        </p>
+
 </footer>
 
 
 <div class="bg-modal">
     <div class="bg-modal__content">
-        <div class="bg-modal__content--close"><ion-icon name="close"></ion-icon></div>
+        <div class="bg-modal__content--close">
+            <ion-icon name="close"></ion-icon>
+        </div>
 
         <div class="contact-info">
-            <ion-icon name="call"></ion-icon>
-            557-447-445<br>
-            <ion-icon name="mail"></ion-icon>
-            gukanozadze@gmail.com
+            <div>
+                <ion-icon name="call"></ion-icon>
+                557-447-445
+            </div>
+            <div>
+                <ion-icon name="mail"></ion-icon>
+                gukanozadze@gmail.com
+            </div>
+
         </div>
-        
+
     </div>
 </div>

@@ -5,19 +5,30 @@
     position: relative;
     height: 50rem;
 
+
+
+    @include respond(tablet_port){
+        height: 45rem;
+
+    }
     &__side{
+        position: absolute;
+        top:0;
+        left:0;
+        border-radius: 5px;
         background-color: orangered;
         color: #fff;
         height: 50rem;
         transition: all .8s ease;
-        position: absolute;
-        top:0;
-        left:0;
         width: 100%;
         backface-visibility: hidden;
         overflow: hidden;
         box-shadow: 0px 0px 3rem rgba(0, 0, 0,.4);
-        border-radius: 5px;
+
+        @include respond(tablet_port){
+            height: 45rem;
+    
+        }
 
         &--front {
             background-color: $color-white;

@@ -2,8 +2,9 @@
 /* HEADER***************************/
 /* *********************************/
 .header{
-    height: 95vh;
     position: relative;
+
+    height: 100vh;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light,0.8),
@@ -11,8 +12,16 @@
         url('../img/laptop-hero.jpg');
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0,100% 0%, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0,100% 0%, 100% 80%, 0 100%);
     z-index: 1;
+
+    @include respond(tablet_port){
+        clip-path: polygon(0 0,100% 0%, 100% 85%, 0 100%);
+    }
+
+    @include respond(phone){
+        clip-path: polygon(0 0,100% 0%, 100% 90%, 0 100%);
+    }
 
     &__logo-box {
         position: absolute;
@@ -30,6 +39,15 @@
         left: 50%;
         transform:translate(-50%, -50%);
         text-align: center;
+
+        @include respond(tablet_port){
+            width: 90%;
+            
+        }
+        @include respond(phone){
+            transform:translate(-50%, -40%);
+            
+        }
     }
 }
 

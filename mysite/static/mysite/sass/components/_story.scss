@@ -1,54 +1,34 @@
 .story{
-    width: 75%;
+    position: relative;
+    font-size: $big_font_size;
+    width: 80%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba(0,0,0,.2);
-    background: rgba(255, 255, 255, 0.76);
+    background: rgba(255, 255, 255, 0.73);
     border-radius: 5px;
     padding: 5rem;
-    font-size: $big_font_size;
     transform: skewX(-12deg);
-    position: relative;
-
-    
-
-    &__shape{
-        width: 15rem;
-        height: 15rem;
-        float: left;
-
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-
-        transform: translateX(-3rem) skewX(12deg);
-    }
-
-    &__image{
-        height: 100%;
-        transform: translateX(-.7rem) scale(1.2);
-        transition: all .4s ease;
-        backface-visibility: hidden
-    }
 
     &__text{
         transform: skewX(12deg);
     }
 
-    &__caption{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 20%);
-        color: white;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 1.7rem;
-        text-align: center;
-        backface-visibility: hidden;
-        transition: all .8s;
-        opacity: 0;
+    @include respond(tablet_port){
+        width: 100%;
+
     }
+
+    @include respond(phone){
+        width: 100%;
+        transform: skewX(-5deg);
+
+        &__text{
+            transform: skewX(5deg);
+        }
+
+    }
+
+    
+
 
 }
