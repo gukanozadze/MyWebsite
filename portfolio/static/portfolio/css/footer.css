@@ -107,15 +107,14 @@ footer p{
         font-size: 15px;
     }
 
-    
     .bg-modal__content{
-        width: 80%;
+        width: 75%;
         padding: 10rem 10px;
     }
 
     .bg-modal__content .contact-info{
     
-        font-size: 15px
+        font-size: 20px
     }
 
     .bg-modal__content--close ion-icon{
@@ -125,9 +124,30 @@ footer p{
     }
     
     .bg-modal__content .contact-info ion-icon{
-    font-size: 18px;
+        font-size: 20px;
 
         margin-right: 10px;
     }
+}
+
+@media (max-width: 600px){
+    .bg-modal__content--close ion-icon{
+
+        top: 15px;
+        right: 15px;
+    }
+
+    .bg-modal__content .contact-info{
     
+        font-size: 18px
+    }
+
+    .bg-modal__content{
+        width: 85%;
+    }
+
+    .bg-modal__content .contact-info{
+    
+        font-size: 18px
+    }
 }
