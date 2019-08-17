@@ -11,6 +11,7 @@ $("#footer-contact").on('click', function(e){
 
 
 $('.bg-modal').on('click', function(e){
+    $("body").css("overflow-y", "auto");
     bgModal.hide()
 })
 
