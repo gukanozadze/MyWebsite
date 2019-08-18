@@ -304,6 +304,8 @@ p.paragraph {
     backface-visibility: hidden;
     overflow: hidden;
     box-shadow: 0px 0px 3rem rgba(0, 0, 0, 0.4); }
+    .card__side--2 {
+      box-shadow: 0px 0px 15px 10px rgba(5, 139, 173, 0.5); }
     @media (max-width: 900px) {
       .card__side {
         height: 45rem; } }
@@ -318,17 +320,18 @@ p.paragraph {
         margin: 0 auto;
         top: 40%; }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-        .card__side--back-1 .btn {
-          color: #55c57a; }
-      .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #ffa726, #ef6c00); }
-        .card__side--back-2 .btn {
+        .card__side--back-1 .btn {
           color: #FB8C00; }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #43afcc, #058bad);
+        box-shadow: 0px 0px 25px 10px rgba(50, 182, 217, 0.5); }
+        .card__side--back-2 .btn {
+          color: #32b6d9; }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
         .card__side--back-3 .btn {
-          color: #0d74d4; }
+          color: #55c57a; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -341,11 +344,11 @@ p.paragraph {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background-blend-mode: screen; }
     .card__image--1 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/foodpage.jpg"); }
+      background-image: linear-gradient(to right bottom, #ffa726, #ef6c00), url("../img/upwork-profile.png"); }
     .card__image--2 {
-      background-image: linear-gradient(to right bottom, rgba(255, 167, 38, 0.8), rgba(239, 108, 0, 0.8)), url("../img/barchart.png"); }
+      background-image: linear-gradient(to right bottom, #43afcc, #058bad), url("../img/movie-searcher-cover.jpg"); }
     .card__image--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/upwork-profile.png"); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/foodpage.jpg"); }
   .card__description {
     text-align: center;
     margin-top: 2rem; }
@@ -368,11 +371,12 @@ p.paragraph {
     right: 0;
     top: 14rem; }
     .card__name--1 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.9), rgba(40, 180, 133, 0.9)); }
-    .card__name--2 {
       background-image: linear-gradient(to right bottom, rgba(255, 167, 38, 0.9), rgba(239, 108, 0, 0.9)); }
+    .card__name--2 {
+      background-image: linear-gradient(to right bottom, rgba(67, 175, 204, 0.9), rgba(5, 139, 173, 0.9));
+      font-size: 2.1rem; }
     .card__name--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.9), rgba(86, 67, 250, 0.9)); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.9), rgba(40, 180, 133, 0.9)); }
 
 .skill {
   background: white;

@@ -25,6 +25,10 @@
         overflow: hidden;
         box-shadow: 0px 0px 3rem rgba(0, 0, 0,.4);
 
+        &--2{
+            box-shadow: 0px 0px 15px 10px rgba($color: $color-tertiary-dark, $alpha: .5)                
+                
+        }
         @include respond(tablet_port){
             height: 45rem;
     
@@ -32,6 +36,7 @@
 
         &--front {
             background-color: $color-white;
+            
         }
 
         &--back {
@@ -47,18 +52,23 @@
             }
 
             &-1{
-                background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1),rgba($color-primary-dark, 1));
-                .btn{color: $color-primary;}
-            }
-
-            &-2{
                 background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 1),rgba($color-secondary-dark, 1));
                 .btn{color: $color-secondary;}
+                
+                
+            }
+            
+            &-2{
+                background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 1),rgba($color-tertiary-dark, 1));
+                .btn{color: $color-tertiary;}
+
+                box-shadow: 0px 0px 25px 10px rgba($color: $color-tertiary, $alpha: .5)                
+
             }
 
             &-3{
-                background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 1),rgba($color-tertiary-dark, 1));
-                .btn{color: $color-tertiary;}
+                background-image: linear-gradient(to right bottom, rgba($color-primary-light, 1),rgba($color-primary-dark, 1));
+                .btn{color: $color-primary;}
             }
         }
     }
@@ -84,21 +94,22 @@
 
 
         &--1{
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 1),rgba($color-secondary-dark, 1)),
 
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8),rgba($color-primary-dark, 0.8)),
-            url('../img/foodpage.jpg');
+            url('../img/upwork-profile.png');
+            
         }
 
         &--2{
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 1),rgba($color-tertiary-dark, 1)),
 
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.8),rgba($color-secondary-dark, 0.8)),
-            url('../img/barchart.png');
+            url('../img/movie-searcher-cover.jpg');
         }
 
         &--3{
-
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 1),rgba($color-tertiary-dark, 1)),
-            url('../img/upwork-profile.png');
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8),rgba($color-primary-dark, 0.8)),
+            url('../img/foodpage.jpg');
+            
         }
     }
 
@@ -134,15 +145,20 @@
 
 
         &--1{
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.9),rgba($color-secondary-dark, 0.9));
+
+
         }
 
         &--2{
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.9),rgba($color-secondary-dark, 0.9));
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.9),rgba($color-tertiary-dark, 0.9));
+
+            font-size: 2.1rem;
         }
 
         &--3{
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.9),rgba($color-tertiary-dark, 0.9));
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .9), rgba($color-primary-dark, .9));
+
         }
     }
 }
