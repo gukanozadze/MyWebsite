@@ -117,7 +117,7 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #43afcc, #16a6cc);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -237,16 +237,16 @@ p.paragraph {
   animation-fill-mode: backwards; }
 
 .button-text:link, .button-text:visited {
-  color: #55c57a;
+  color: #16a6cc;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #55c57a;
+  border-bottom: 1px solid #16a6cc;
   padding: 3px 6px;
   font-size: 1.7rem;
   transition: all .3s; }
 
 .button-text:hover {
-  background-color: #55c57a;
+  background-color: #16a6cc;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   transform: translateY(-2px); }
@@ -325,9 +325,9 @@ p.paragraph {
           color: #FB8C00; }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #43afcc, #058bad);
-        box-shadow: 0px 0px 25px 10px rgba(50, 182, 217, 0.5); }
+        box-shadow: 0px 0px 25px 10px rgba(22, 166, 204, 0.5); }
         .card__side--back-2 .btn {
-          color: #32b6d9; }
+          color: #16a6cc; }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
         .card__side--back-3 .btn {
@@ -361,7 +361,9 @@ p.paragraph {
       .card__description h4:not(:last-child) {
         border-bottom: 2px solid #e9e9e9; }
     .card__description--2 h4 {
-      color: #20b1d6; }
+      color: #007C9C;
+      font-size: 1.6rem;
+      width: 90%; }
   .card__name {
     font-size: 2.8rem;
     font-weight: 300;
@@ -391,7 +393,7 @@ p.paragraph {
       padding: 2rem 4rem; } }
   .skill i {
     font-size: 6rem;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-image: linear-gradient(to right, #43afcc, #058BAD);
     -webkit-background-clip: text;
     color: transparent;
     margin: 2rem 0;
@@ -435,7 +437,7 @@ p.paragraph {
 .header {
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/laptop-hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(67, 175, 204, 0.8), rgba(5, 139, 173, 0.8)), url("../img/laptop-hero.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
@@ -520,7 +522,7 @@ p.paragraph {
       padding: 20rem 0; } }
 
 .section-skills {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(67, 175, 204, 0.8), rgba(5, 139, 173, 0.8));
   margin-top: -20rem;
   padding-top: 25rem;
   padding-bottom: 25rem; }
