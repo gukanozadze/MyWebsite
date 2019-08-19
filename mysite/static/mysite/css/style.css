@@ -117,7 +117,7 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #43afcc, #16a6cc);
+  background-image: linear-gradient(to right, #1da1c4, #1497BA);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -237,16 +237,16 @@ p.paragraph {
   animation-fill-mode: backwards; }
 
 .button-text:link, .button-text:visited {
-  color: #16a6cc;
+  color: #1497BA;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #16a6cc;
+  border-bottom: 1px solid #1497BA;
   padding: 3px 6px;
   font-size: 1.7rem;
   transition: all .3s; }
 
 .button-text:hover {
-  background-color: #16a6cc;
+  background-color: #1497BA;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   transform: translateY(-2px); }
@@ -324,10 +324,10 @@ p.paragraph {
         .card__side--back-1 .btn {
           color: #FB8C00; }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #43afcc, #058bad);
-        box-shadow: 0px 0px 25px 10px rgba(22, 166, 204, 0.5); }
+        background-image: linear-gradient(to right bottom, #1da1c4, #058bad);
+        box-shadow: 0px 0px 25px 10px rgba(20, 151, 186, 0.5); }
         .card__side--back-2 .btn {
-          color: #16a6cc; }
+          color: #1497BA; }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
         .card__side--back-3 .btn {
@@ -346,7 +346,7 @@ p.paragraph {
     .card__image--1 {
       background-image: linear-gradient(to right bottom, #ffa726, #ef6c00), url("../img/upwork-profile.png"); }
     .card__image--2 {
-      background-image: linear-gradient(to right bottom, #43afcc, #058bad), url("../img/movie-searcher-cover.jpg"); }
+      background-image: linear-gradient(to right bottom, #1da1c4, #058bad), url("../img/movie-searcher-cover.jpg"); }
     .card__image--3 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/foodpage.jpg"); }
   .card__description {
@@ -377,7 +377,7 @@ p.paragraph {
     .card__name--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 167, 38, 0.9), rgba(239, 108, 0, 0.9)); }
     .card__name--2 {
-      background-image: linear-gradient(to right bottom, rgba(67, 175, 204, 0.9), rgba(5, 139, 173, 0.9));
+      background-image: linear-gradient(to right bottom, rgba(29, 161, 196, 0.9), rgba(5, 139, 173, 0.9));
       font-size: 2.1rem; }
     .card__name--3 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.9), rgba(40, 180, 133, 0.9)); }
@@ -393,7 +393,7 @@ p.paragraph {
       padding: 2rem 4rem; } }
   .skill i {
     font-size: 6rem;
-    background-image: linear-gradient(to right, #43afcc, #058BAD);
+    background-image: linear-gradient(to right, #1497BA, #058BAD);
     -webkit-background-clip: text;
     color: transparent;
     margin: 2rem 0;
@@ -437,7 +437,7 @@ p.paragraph {
 .header {
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(67, 175, 204, 0.8), rgba(5, 139, 173, 0.8)), url("../img/laptop-hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(29, 161, 196, 0.8), rgba(5, 139, 173, 0.8)), url("../img/laptop-hero.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
@@ -522,7 +522,7 @@ p.paragraph {
       padding: 20rem 0; } }
 
 .section-skills {
-  background-image: linear-gradient(to right bottom, rgba(67, 175, 204, 0.8), rgba(5, 139, 173, 0.8));
+  background-image: linear-gradient(to right bottom, #1497ba, rgba(5, 139, 173, 0.8));
   margin-top: -20rem;
   padding-top: 25rem;
   padding-bottom: 25rem; }
