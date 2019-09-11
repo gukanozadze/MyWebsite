@@ -7,9 +7,9 @@
     height: 100vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-tertiary-light,0.8),
-        rgba($color-tertiary-dark, 0.8)),
-        url('../img/laptop-hero.jpg');
+        rgba($color-black,0.7),
+        rgba($color-black, 0.7)),
+        url('../img/laptop-background.jpg');
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0,100% 0%, 100% 80%, 0 100%);

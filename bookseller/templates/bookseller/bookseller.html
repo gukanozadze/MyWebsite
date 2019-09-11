@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="shortcut icon" href="https://www.thebookseller.com/sites/all/themes/bookseller_v2_theme/favicon.ico"
+    type="image/vnd.microsoft.icon">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'bookseller/css/slick-theme.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'bookseller/css/slick.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'bookseller/css/icofont.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'bookseller/css/style.css' %}">
+  
+  <title>The Bookseller | Copy </title>
+</head>
+
+<body>
+
+  <header class="header row">
+
+    <div class="social-links">
+      <span>About</span>
+
+      <i class="icofont-twitter"></i>
+      <i class="icofont-facebook"></i>
+      <i class="icofont-google-plus"></i>
+      <i class="icofont-linkedin"></i>
+      <i class="icofont-instagram"></i>
+    </div>
+
+    <div class="header__buttons">
+      <a class="btn btn--blue btn--icon">Register<i class="icofont-pencil-alt-2"></i></a>
+      <a class="btn btn--gold btn--icon">Subscribe<i class="icofont-lock"></i></a>
+      <a class="btn btn--blue btn--icon">Login<i class="icofont-user-alt-3"></i></a>
+    </div>
+
+    <div class="search">
+      <input title="Enter the terms you wish to search for." class="input input--search" placeholder="Search..."
+        type="text" value="" maxlength="128">
+      <div class="search__icon-box">
+        <i class="icofont-search"></i>
+      </div>
+    </div>
+  </header>
+
+  <div class="banner-background">
+    <!-- <div class="add row">
+      <img src="{% static 'bookseller/img/add-1.gif' %}">
+
+      <img src="{% static 'bookseller/img/add-2.gif' %}">
+
+    </div>
+    <hr> -->
+    <div class="banner row">
+
+      <div class="banner__image">
+        <img src="{% static 'bookseller/img/bookseller_logo.svg' %}" alt="The Bookseller">
+      </div>
+
+      <div class="banner__local-navigation preload">
+
+        <nav class="nav">
+          <div class="close-button">
+            <i class="icofont-close"></i>
+          </div>
+          <a class="nav__link nav__link--active" href="">Home</a>
+          <a class="nav__link" href="">News</a>
+          <a class="nav__link" href="">Books</a>
+          <a class="nav__link" href="">Charts</a>
+          <a class="nav__link" href="">Blogs</a>
+          <a class="nav__link" href="">Insights</a>
+          <a class="nav__link" href="">Children's</a>
+          <a class="nav__link" href="">FutureBook</a>
+          <!-- <a class="nav__link" href="">Events</a>
+          <a class="nav__link" href="">Careers</a>
+          <a class="nav__link" href="">Jobs</a> -->
+        </nav>
+
+        <div class="hot-topics">
+          <a class="h5 arrow" href="#">Hot Topics</h5>
+            <a href="#" class="hot-topics__link">Bloomsbury wins 15-publishe...</a>
+            <a href="#" class="hot-topics__link">Hachette makes string of app...</a>
+        </div>
+
+
+      </div>
+
+      <div class="banner__icons">
+        <button class="btn btn--orange"><i class="icofont-lock"></i></button>
+        <button class="btn btn--orange"><i class="icofont-user-alt-3"></i></button>
+        <button class="btn"><i class="icofont-search-1"></i></button>
+        <button class="btn nav-menu-button"><i class="icofont-navigation-menu"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <main class="row content">
+
+    <div class="content__main">
+      <div class="carousel">
+
+        <div class="carousel__item">
+          <img src="{% static 'bookseller/img/slider-image-1.png' %}" class="carousel__item--image" alt="carousel-item-image-1">
+
+          <div class="carousel__item--content">
+            <h2>Orion triumphs in seven-way auction for 'trailblazing' cannabis bible</h2>
+            <p>Orion Spring will publish a book about the use of medical cannabis as a wellness aid by British GP Dani
+              Gordon following a seven-way bidding war.</p>
+            <a class="h5 arrow" href="#">Read More</a>
+          </div>
+        </div>
+
+
+        <div class="carousel__item">
+          <img src="{% static 'bookseller/img/slider-image-2.png' %}" class="carousel__item--image" alt="carousel-item-image-2">
+          <div class="carousel__item--content">
+            <h2>China's book sales keep on rising in 2019</h2>
+            <p>The books market in China, as measured by data company OpenBook, rose by 10.8% year-on-year in the
+              first half of 2019.</p>
+            <a class="h5 arrow" href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <img src="{% static 'bookseller/img/slider-image-3.png' %}" class="carousel__item--image" alt="carousel-item-image-3">
+          <div class="carousel__item--content">
+            <h2>Springer Nature and Projekt DEAL strike Open Access agreement</h2>
+            <p>Springer Nature and Projekt DEAL have reached an understanding on the world's largest transformative Open
+              Access agreement...</p>
+            <a class="h5 arrow" href="#">Read More</a>
+          </div>
+        </div>
+
+
+
+      </div>
+      <img class="add__image add__image-for-phones" src="{% static 'bookseller/img/add-5.gif' %}">
+      <div class="media">
+        <div class="media__item">
+          <img src="{% static 'bookseller/img/media-image-1.png' %}" class="media__image" alt="media-image-1">
+          <div class="media__content">
+            <h3>Double win for Orion at BMS awards</h2>
+              <p>Orion Spring will publish a book about the use of medical cannabis as a wellness aid by British GP Dani
+                Gordon following a seven-way bidding war.</p>
+              <a class="h5 muted" href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="media__item">
+          <img src="{% static 'bookseller/img/media-image-2.png' %}" class="media__image" alt="media-image-2">
+          <div class="media__content">
+            <h3>Century to publish new Max Brooks novel</h2>
+              <p>Century will publish a new novel by author Max Brooks in Spring 2020. </p>
+              <a class="h5 muted" href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="media__item">
+          <img src="{% static 'bookseller/img/media-image-3.png' %}" class="media__image" alt="media-image-3">
+          <div class="media__content">
+            <h3>Edinburgh Book Festival: Sturgeon shares 'theory' on politicians and literature</h2>
+              <p>Nicola Sturgeon has taken to the stage at Edinburgh Books Festival and shared her theory on politicians
+                and literature. </p>
+              <a class="h5 muted" href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="media__item">
+          <img src="{% static 'bookseller/img/media-image-4.png' %}" class="media__image" alt="media-image-4">
+          <div class="media__content">
+            <h3>
+              National Poetry Day reading lists to feature YA reads</h2>
+              <p>YA-themed books will feature on this year's suggested reading lists to celebrate National Poetry Day on
+                3rd October.</p>
+              <a class="h5 muted" href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="media__item">
+          <img src="{% static 'bookseller/img/media-image-5.png' %}" class="media__image" alt="media-image-5">
+          <div class="media__content">
+            <h3>BBC to adapt Bloom's Ridley Road into four-part thriller</h2>
+              <p>BBC One is set to adapt Jo Bloom's novel Ridley Road into a four part thriller. </p>
+              <a class="h5 muted" href="#">Read More</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="more-link">
+        <a href="#" class="arrow">More News</a>
+      </div>
+
+      <div class="blog">
+        <h3 class="underline">OPINION</h3>
+
+        <div class="blog__media">
+          <div class="blog__media--image-wrapper">
+            <img src="{% static 'bookseller/img/blog-profile.jpg' %}" alt="blog_image">
+          </div>
+          <div class="blog__media--content">
+            <h3>Sustained success</h3>
+            <h6>By Lena Li</h6>
+            <h6 class="light">Editorial director humanites/social sciences, China at Springer Nature</h6>
+            <p>The role China and its Higher Education sector will play in creating sustainable and prosperous global
+              ecologies and economies ...</p>
+            <a class="h5 muted" href="#">Read More</a>
+
+
+          </div>
+        </div>
+
+        <div class="blog__content">
+          <div class="blog__content--item">
+            <h3>TBP reinvented</h3>
+            <p class="small"><strong>Benedicte Page </strong> Deputy editor at The Bookseller</p>
+          </div>
+          <div class="blog__content--item">
+            <h3>Getting to grips with Gen Z</h3>
+            <p class="small"><strong>Kika Sroka-Miller </strong> Brand and growth director at Zed Books</p>
+          </div>
+          <div class="blog__content--item">
+            <h3>Ten tips to cut plastic</h3>
+            <p class="small"><strong>Martin Dorey</strong></p>
+          </div>
+          <div class="blog__content--item">
+            <h3>A measure of progress</h3>
+            <p class="small"><strong>Benedicte Page </strong> Deputy editor at The Bookseller</p>
+          </div>
+
+        </div>
+
+        <div class="more-link">
+          <a href="#" class="arrow">See More Blogs</a>
+        </div>
+
+      </div>
+
+      <div class="book-preview">
+        <h3 class="underline">BOOK PREVIEWS</h3>
+
+        <div class="book-preview__main-review">
+          <div class="book-preview__main-review--profile">
+            <img src="{% static 'bookseller/img/book-preview-profile-image.jpg' %}" alt="book-preview-profile-image">
+            <h6 class="white mt-1">Alison Flood</h6>
+          </div>
+
+          <div class="book-preview__main-review--content">
+            <h4 class="white light">November 2019 Paperback Previews</h4><br><br>
+            <p>Paperback numbers have reduced dramatically this month, making way for the slew of glossy Christmas
+              hardbacks. But there are still some gems to be found, as highlighted in my picks: I’d particularly...</p>
+
+
+            <a class="btn btn--orange">
+              <h5>Read More</h5><i class="icofont-lock"></i>
+            </a>
+
+          </div>
+
+          <div class="book-preview__main-review--thubnail">
+            <div class="wrapper">
+              <img src="{% static 'bookseller/img/book-thubnail.jpg' %}" alt="book-thubmnail">
+              <img src="{% static 'bookseller/img/book-of-the-month.png' %}" class="book-of-the-month" alt="book-of-the-month">
+            </div>
+            <div class="pointer-right"></div>
+
+          </div>
+        </div>
+
+        <div class="book-preview__sub-review">
+
+          <div class="book-preview__sub-review--profile">
+            <img src="{% static 'bookseller/img/book-preview-sub-1.jpg' %}" alt="book-preview-profile-image">
+          </div>
+
+          <div class="book-preview__sub-review--content">
+            <h4 class="white light">November 2019 Children's Previews by Fiona Noble</h4>
+          </div>
+
+          <div class="book-preview__sub-review--extra">
+
+          </div>
+
+        </div>
+
+
+        <div class="book-preview__sub-review">
+          <div class="book-preview__sub-review--profile">
+            <img src="{% static 'bookseller/img/book-preview-sub-2.jpg' %}" alt="book-preview-profile-image">
+          </div>
+
+          <div class="book-preview__sub-review--content">
+            <h4 class="white light">November 2019 New Titles: Non-fiction Previews by Caroline Sanderson</h4>
+          </div>
+
+          <div class="book-preview__sub-review--extra">
+
+          </div>
+        </div>
+
+        <div class="book-preview__sub-review">
+          <div class="book-preview__sub-review--profile">
+            <img src="{% static 'bookseller/img/book-preview-sub-3.jpg' %}" alt="book-preview-profile-image">
+          </div>
+
+          <div class="book-preview__sub-review--content">
+            <h4 class="white light">November 2019 New Titles: Fiction Previews by Alice O'Keeffe</h4>
+          </div>
+
+          <div class="book-preview__sub-review--extra">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="more-link">
+        <a href="#">MORE PREVIEWS</a>
+      </div>
+
+      <div class="futurebook">
+        <h3 class="underline purple">FUTUREBOOK</h3>
+
+        <div class="futurebook__modal">
+          <img src="{% static 'bookseller/img/guy-coding.png' %}" class="futurebook__modal--image" alt="guy-coding">
+
+          <div class="futurebook__modal--content">
+            <h3>Announcing the FutureBook 2019 Day of Code</h3>
+            <h6>By Sara O'Connor</h6>
+            <p>"Software is eating the world," said Marc Andreessen, in 2011. So why don’t you and your team learn to
+              make it, for free?</p>
+            <h5 class="muted">Read More</h5>
+          </div>
+        </div>
+
+        <div class="futurebook__content">
+          <div class="futurebook__content--item">
+            <h3>Can heat and touch-sensitive book To You replicate human connection?</h3>
+            <p class="small"><strong>Caroline Carpenter </strong> Web editor at The Bookseller</p>
+          </div>
+
+          <div class="futurebook__content--item">
+            <h3>The future is make believe</h3>
+            <p class="small"><strong>Laura Hamm </strong>Founder and c.e.o. at Fabled</p>
+          </div>
+
+          <div class="futurebook__content--item">
+            <h3>The pipeline of publishing leaders is female—pay them equally and make gender a non-issue</h3>
+            <p class="small"><strong>Esther Harris </strong> Co-founder at Bookollective</p>
+          </div>
+
+          <div class="futurebook__content--item">
+            <h3>Who owns digital stories?</h3>
+            <p class="small"><strong>Guy Gadney </strong> c.e.o. at To Play For
+            </p>
+          </div>
+        </div>
+
+        <div class="more-link purple">
+          <a href="#" class="purple arrow">MORE</a>
+        </div>
+      </div>
+
+    </div><!-- END OF MAIN -->
+
+
+    <div class="content__aside--cards">
+
+      <div class="card">
+        <img src="{% static 'bookseller/img/2019.png' %}" class="card__image">
+        <h4 class="light card__text">
+          The BookSeller's Publishing Calendar 2019
+        </h4>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'bookseller/img/dredebiani-grandma.png' %}" class="card__image">
+        <h4 class="light card__text">
+          Obituary: Toni Morrison
+        </h4>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'bookseller/img/book.png' %}" class="card__image">
+        <h4 class="light card__text">
+          Books in the Media's Book of the Week
+        </h4>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'bookseller/img/guy-chillin.png' %}" class="card__image">
+        <h4 class="light card__text">
+          Andy Stanton on Mr Gum and the Dancing Bear
+        </h4>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'bookseller/img/2-girls-2-books.png' %}" class="card__image">
+        <h4 class="light card__text">
+          20 years of the Summer Reading Challenge
+        </h4>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'bookseller/img/handsome-guy.png' %}" class="card__image">
+        <h4 class="light card__text">
+          Eoin Colfer returns to Artemis Fowl
+        </h4>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'bookseller/img/dredebiani-girl.png' %}" class="card__image">
+        <h4 class="light card__text">
+          Sophia Thakur on publishing her first collection
+        </h4>
+      </div>
+
+      <img src="{% static 'bookseller/img/social-links.png' %}" class="social-links">
+    </div>
+
+    <div class="content__aside">
+      <!-- <div class="center-add-image">
+        <img src="{% static 'bookseller/img/add-3.jpg' %}" class="add__image" style="margin-bottom: 1rem">
+      </div> -->
+      
+      <div class="jobs">
+        <h4 class="jobs__legend legend">JOBS IN BOOKS</h4>
+        <!-- <img class="add__image" src="{% static 'bookseller/img/add-4.jpg' %}" style="width: 100%; max-width: 300px"> -->
+
+        <ul class="jobs__list">
+          <li><a href=""> Editor</a></li>
+          <li><a href=""> Business Development Manager</a></li>
+          <li><a href=""> Assistant Editor/Deputy Managing Edito</a></li>
+        </ul>
+
+        <div class="more-link muted">
+          <a href="#" class="muted">MORE JOBS</a>
+        </div>
+      </div>
+
+      <div class="chart">
+        <h4 class="legend orange">THE OFFICIAL UK CHART</h4>
+
+        <div class="chart__table">
+
+          <div class="chart__table--item">
+            <div class="id">1</div>
+            <img src="{% static 'bookseller/img/chart-book-1.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+          <div class="chart__table--item">
+            <div class="id">2</div>
+            <img src="{% static 'bookseller/img/chart-book-2.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+          <div class="chart__table--item">
+            <div class="id">3</div>
+            <img src="{% static 'bookseller/img/chart-book-3.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+          <div class="chart__table--item">
+            <div class="id">4</div>
+            <img src="{% static 'bookseller/img/chart-book-4.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+          <div class="chart__table--item">
+            <div class="id">5</div>
+            <img src="{% static 'bookseller/img/chart-book-5.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+          <div class="chart__table--item">
+            <div class="id">6</div>
+            <img src="{% static 'bookseller/img/chart-book-6.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+          <div class="chart__table--item">
+            <div class="id">7</div>
+            <img src="{% static 'bookseller/img/chart-book-7.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+          <div class="chart__table--item">
+            <div class="id">8</div>
+            <img src="{% static 'bookseller/img/chart-book-8.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+          <div class="chart__table--item">
+            <div class="id">9</div>
+            <img src="{% static 'bookseller/img/chart-book-9.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+          <div class="chart__table--item">
+            <div class="id">10</div>
+            <img src="{% static 'bookseller/img/chart-book-10.jpg' %}">
+            <div class="description">
+              <h6>Run Away</h6>
+              <h6 class="light">Eby Harlan Coben</h6>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="more-link">
+          <a href="#" class="">More Charts</a>
+        </div>
+      </div>
+      <!-- <div class="center-add-image">
+        <img class="add__image" src="{% static 'bookseller/img/add-6.gif' %}">
+      </div> -->
+      <div class="comments">
+        <h4 class="legend orange">RECENT COMMENTS</h4>
+
+        <div class="comments__item">
+          <a href="#" class="comment-title"> yamamanama</a>
+          <h6 class="light">"Pew Die Pie ... intelligent... thoughtful... I'm living in a cuckoo clock!</h6>
+          <a href="#" class="light">The new literary tastemakers: can they be trusted? · 16 hours ago</a>
+        </div>
+
+
+        <div class="comments__item">
+          <a href="#" class="comment-title"> Jody Hadlock</a>
+          <h6 class="light">Uh, the first headline in the article has a typo</h6>
+          <a href="#" class="light">The new literary tastemakers: can they be trusted? · 22 hours ago</a>
+        </div>
+
+        <div class="comments__item">
+          <a href="#" class="comment-title"> Anton King</a>
+          <h6 class="light">"Shouldn’t his book be called, ‘The Highs And Lows Of The Hard Faced’? Is he not aware that
+            the mess he caused still rages on? Not one interview should be granted to this self serving, arrogant..."
+          </h6>
+          <a href="#" class="light">David Cameron memoir discussion to be John Humphrys' final 'big' interview for
+            'Today' · 2 days ago</a>
+        </div>
+
+
+      </div>
+
+      <div class="popular">
+        <h4 class="legend purple">MOST POPULAR</h4>
+
+        <div class="popular__item">
+          <a href="#" class="comment-title"> The new literary tastemakers: can they be trusted?</a>
+          <a href="#" class="light">2 comments · 16 hours ago</a>
+        </div>
+
+        <div class="popular__item">
+          <a href="#" class="comment-title">Essex library campaigners urge community groups to withdraw over
+            'unsustainable financial burdem'</a>
+          <a href="#" class="light">2 comments · 4 days ago</a>
+        </div>
+
+        <div class="popular__item">
+          <a href="#" class="comment-title"> David Cameron memoir discussion to be John Humphrys' final 'big' interview
+            for 'Today'</a>
+          <a href="#" class="light">1 comment · 2 days ago</a>
+        </div>
+
+        <div class="popular__item">
+          <a href="#" class="comment-title"> John Murray scoops 'incredibly timely' Soros book</a>
+          <a href="#" class="light">2 comments · 1 week ago</a>
+        </div>
+
+        <div class="popular__item">
+          <a href="#" class="comment-title"> W F Howes scoops audio for Anneka Harry’s debut</a>
+          <a href="#" class="light">2 comments · 1 week ago</a>
+        </div>
+      </div>
+
+      <div class="issue">
+        <div class="issue__image">
+          <img src="{% static 'bookseller/img/book-bookseller.jpg' %}" alt="book-bookseller">
+        </div>
+
+        <div class="issue__content">
+          <h4>Latest issue <a href="#">view online</a> or <a href="#">subscribe now</a></h4>
+          <h4 class="lighter">Issue No 5853 Friday, August 16 2019</h4>
+          <h4 class="small">Back issues <a href="#">available here</a></h4>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="row footer-content">
+      <div class="footer-content__site-map">
+        <div class="footer-content__site-map--navigation">
+          <a href="#">Site Map</a>
+          <a href="#">Advertise</a>
+          <a href="#">Jobs</a>
+          <a href="#">Contact</a>
+          <a href="#">About Us</a>
+          <a href="#">Editorial Features</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Upgrade Subscription</a>
+        </div>
+        <div class="footer-content__site-map--copyright">
+          <span>©2019 Bookseller Media Ltd rights reserved.</span>
+        </div>
+      </div>
+
+      <div class="footer-content__sign-off">
+        <div class="footer-content__sign-off--logo">
+          <img src="img/footer-logo.svg" alt="footer-logo">
+        </div>
+
+        <div class="footer-content__sign-off--extra">
+          <span>At the Heart of Publishing since 1858</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="{% static 'bookseller/js/slick.min.js' %}" type="text/javascript"></script>
+
+  <script src="{% static 'bookseller/js/main.js' %}" type="text/javascript"></script>
+</body>
+
+</html>

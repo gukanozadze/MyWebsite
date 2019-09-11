@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'charts.apps.ChartsConfig',
     'sports.apps.SportsConfig',
     'mysite.apps.MysiteConfig',
+    'bookseller.apps.BooksellerConfig',
 
     # Django Defaults
     'django.contrib.admin',
