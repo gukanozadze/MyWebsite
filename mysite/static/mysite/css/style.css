@@ -344,7 +344,7 @@ p.paragraph {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background-blend-mode: screen; }
     .card__image--1 {
-      background-image: linear-gradient(to right bottom, #ffa726, #ef6c00), url("../img/upwork-profile.png"); }
+      background-image: linear-gradient(to right bottom, #ffa726, #ef6c00), url("../img/thebookseller-thumbnail.png"); }
     .card__image--2 {
       background-image: linear-gradient(to right bottom, #1da1c4, #058bad), url("../img/movie-searcher-cover.jpg"); }
     .card__image--3 {
